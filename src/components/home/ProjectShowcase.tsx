@@ -43,7 +43,7 @@ export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
             className="group relative rounded-3xl overflow-hidden border border-[#DADDD5] min-h-[380px] flex flex-col justify-between p-6 editorial-shadow"
           >
             <Image
-              src="/images/harbour-enclave.jpg"
+              src="/images/product_land3.png"
               alt="Harbour Enclave Phase 1 Plotted Community"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -83,7 +83,7 @@ export default function ProjectShowcase({ projects }: ProjectShowcaseProps) {
             className="group relative rounded-3xl overflow-hidden border border-[#DADDD5] min-h-[380px] flex flex-col justify-between p-6 editorial-shadow"
           >
             <Image
-              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+              src="/images/product_land1.png"
               alt="Pearl Haven Layout Executive Plots"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"

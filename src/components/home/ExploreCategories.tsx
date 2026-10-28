@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Maximize2, ShieldCheck } from 'lucide-react';
@@ -19,47 +17,47 @@ interface PlotItem {
 const featuredListings: PlotItem[] = [
   {
     id: '1',
-    slug: 'pearl-haven-plot-18',
+    slug: 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
+    title: 'AP Rajan Garden',
+    location: 'Tharuvaikulam (Beachside)',
+    area: '1,200 sq.ft (2.75 Cents)',
+    ratePerSqft: '₹1,208 / sq.ft',
+    price: '₹ 14.5 Lakhs',
+    image: '/images/product.png',
+    badge: '🌊 Walk to Beach',
+  },
+  {
+    id: '2',
+    slug: 'pearl-haven-corner-villa-plot-korampallam',
     title: 'Pearl Haven Phase 1',
     location: 'Korampallam, Thoothukudi',
     area: '1,500 sq.ft (3.44 Cents)',
     ratePerSqft: '₹2,133 / sq.ft',
     price: '₹ 32.0 Lakhs',
-    image: '/images/pearl-haven.jpg',
+    image: '/images/product_land1.png',
     badge: 'DTCP #48/2023',
   },
   {
-    id: '2',
-    slug: 'harbour-enclave-villa-plot',
+    id: '3',
+    slug: 'harbour-view-enclave-east-facing-muthiapuram',
     title: 'Harbour Enclave Phase 1',
     location: 'Harbour Bypass Road Corridor',
     area: '1,200 sq.ft (2.75 Cents)',
     ratePerSqft: '₹1,650 / sq.ft',
     price: '₹ 19.8 Lakhs',
-    image: '/images/harbour-enclave.jpg',
+    image: '/images/product_land3.png',
     badge: 'Near Port Corridor',
   },
   {
-    id: '3',
-    slug: 'palayam-greens-corner-42',
+    id: '4',
+    slug: 'palayam-greenfield-residential-plot-nh138',
     title: 'Palayam Greens Avenue',
     location: 'Palayamkottai Road (NH 138)',
     area: '2,400 sq.ft (5.51 Cents)',
     ratePerSqft: '₹1,125 / sq.ft',
     price: '₹ 27.0 Lakhs',
-    image: '/images/palayam-greens.jpg',
+    image: '/images/product_land2.png',
     badge: 'Corner Plot',
-  },
-  {
-    id: '4',
-    slug: 'millerpuram-central-avenue',
-    title: 'Millerpuram Prime Central',
-    location: 'Millerpuram City Center',
-    area: '1,800 sq.ft (4.13 Cents)',
-    ratePerSqft: '₹2,888 / sq.ft',
-    price: '₹ 52.0 Lakhs',
-    image: '/images/millerpuram.jpg',
-    badge: 'Prime Commercial/Res',
   },
 ];
 

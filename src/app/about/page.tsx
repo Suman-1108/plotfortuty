@@ -95,7 +95,7 @@ export default function AboutPage() {
 
           <div className="lg:col-span-6 relative aspect-land rounded-xl overflow-hidden border border-[#DADDD5] bg-[#EAECE4]">
             <Image
-              src="https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80"
+              src="/images/ap-rajan-garden-layout.jpg"
               alt="Plotted land layouts in Thoothukudi"
               fill
               className="object-cover"

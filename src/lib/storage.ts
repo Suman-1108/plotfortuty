@@ -46,9 +46,30 @@ export async function getPlots(): Promise<Plot[]> {
   }
 }
 
+const SLUG_ALIASES: Record<string, string> = {
+  'pearl-haven-plot-18': 'pearl-haven-corner-villa-plot-korampallam',
+  'palayam-greens-corner-42': 'palayam-greenfield-residential-plot-nh138',
+  'harbour-enclave-villa-plot': 'harbour-view-enclave-east-facing-muthiapuram',
+  'millerpuram-central-avenue': 'millerpuram-central-luxury-plot',
+  'ap-rajan-garden': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
+  'ap-rajan-garden-plot': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
+  'ap-rajan-garden-beachside': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
+};
+
 export async function getPlotBySlug(slug: string): Promise<Plot | null> {
   const plots = await getPlots();
-  return plots.find((p) => p.slug === slug || p.id === slug) || null;
+  const targetSlug = SLUG_ALIASES[slug] || slug;
+  const directMatch = plots.find((p) => p.slug === targetSlug || p.id === targetSlug || p.slug === slug);
+  if (directMatch) return directMatch;
+
+  // Fuzzy match to prevent 404s on partial slugs
+  const normalized = slug.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return (
+    plots.find((p) => {
+      const pNorm = (p.slug + p.title + p.id).toLowerCase().replace(/[^a-z0-9]/g, '');
+      return pNorm.includes(normalized) || normalized.includes(p.id.replace(/[^a-z0-9]/g, ''));
+    }) || null
+  );
 }
 
 export async function savePlot(plotData: Partial<Plot>): Promise<Plot> {
@@ -109,7 +130,7 @@ export async function savePlot(plotData: Partial<Plot>): Promise<Plot> {
       { name: 'Collectorate', distance: '5 mins' }
     ],
     images: plotData.images && plotData.images.length > 0 ? plotData.images : [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'
+      '/images/ap-rajan-garden-layout.jpg'
     ],
     layoutPlotNumber: plotData.layoutPlotNumber || 'Plot #01',
     createdAt: now,

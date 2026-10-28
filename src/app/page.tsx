@@ -2,6 +2,7 @@ import { getPlots, getProjects } from '@/lib/storage';
 import Hero from '@/components/home/Hero';
 import StatsBanner from '@/components/home/StatsBanner';
 import PopularBentoGrid from '@/components/home/PopularBentoGrid';
+import APRajanGardenCard from '@/components/home/APRajanGardenCard';
 import PropertySuggestions from '@/components/home/PropertySuggestions';
 import ExploreCategories from '@/components/home/ExploreCategories';
 import MasterplanInteractive from '@/components/home/MasterplanInteractive';
@@ -23,7 +24,10 @@ export default async function HomePage() {
       {/* 3. Propriedades mais populares - Asymmetric Bento Grid matching reference */}
       <PopularBentoGrid />
 
-      {/* 4. Sugestões de propriedade que você pode gostar - Pill Filter Bar */}
+      {/* 4. Featured Constructor & Township Showcase: AP Rajan Garden */}
+      <APRajanGardenCard />
+
+      {/* 5. Sugestões de propriedade que você pode gostar - Pill Filter Bar */}
       <PropertySuggestions />
 
       {/* 5. Explore os tipos de propriedades - 4-Card Horizontal Verified Plot Row */}

@@ -54,10 +54,9 @@
       }
     ],
     "images": [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "/images/harbour-enclave.jpg",
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land1.png",
+      "/images/product.png",
+      "/images/real_estate.png"
     ],
     "layoutPlotNumber": "Plot #18",
     "coordinates": {
@@ -115,9 +114,9 @@
       }
     ],
     "images": [
-      "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land2.png",
+      "/images/product_land6.png",
+      "/images/product.png"
     ],
     "layoutPlotNumber": "Plot #07",
     "coordinates": {
@@ -170,14 +169,14 @@
         "distance": "2.5 km (5 mins)"
       },
       {
-        "name": "Harbour Beach Promenade",
-        "distance": "5.0 km (10 mins)"
+        "name": "Harbour Express Toll Plaza",
+        "distance": "2.8 km (5 mins)"
       }
     ],
     "images": [
-      "/images/harbour-enclave.jpg",
-      "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land3.png",
+      "/images/product_land5.png",
+      "/images/product.png"
     ],
     "layoutPlotNumber": "Plot #24",
     "coordinates": {
@@ -235,9 +234,9 @@
       }
     ],
     "images": [
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "/images/harbour-enclave.jpg"
+      "/images/product_land4.png",
+      "/images/product_land1.png",
+      "/images/product.png"
     ],
     "layoutPlotNumber": "Plot #03",
     "coordinates": {
@@ -251,7 +250,7 @@
     "slug": "spic-nagar-green-meadows-affordable-plot",
     "title": "Green Meadows - Peaceful Residential Plot",
     "project": "Green Meadows Layout",
-    "location": "Spic Nagar",
+    "location": "Muthiapuram",
     "address": "Near Muthiapuram Main Road, Spic Nagar, Thoothukudi 628005",
     "price": 1580000,
     "priceDisplay": "₹15.80 Lakhs",
@@ -285,13 +284,14 @@
         "distance": "2.0 km (5 mins)"
       },
       {
-        "name": "Hare Island Coastal Park",
-        "distance": "6.5 km (12 mins)"
+        "name": "Port Ring Expressway",
+        "distance": "3.5 km (6 mins)"
       }
     ],
     "images": [
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land5.png",
+      "/images/product_land3.png",
+      "/images/product.png"
     ],
     "layoutPlotNumber": "Plot #11",
     "coordinates": {
@@ -344,8 +344,9 @@
       }
     ],
     "images": [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land6.png",
+      "/images/product_land2.png",
+      "/images/product.png"
     ],
     "layoutPlotNumber": "Plot #32",
     "coordinates": {
@@ -353,5 +354,72 @@
       "lng": 78.1215
     },
     "createdAt": "2026-03-14"
+  },
+  {
+    "id": "plot-7",
+    "slug": "ap-rajan-garden-beachside-villa-plot-tharuvaikulam",
+    "title": "AP Rajan Garden - Beachside Villa Plot + Construction",
+    "project": "AP Rajan Garden",
+    "location": "Tharuvaikulam",
+    "address": "Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105",
+    "price": 1450000,
+    "priceDisplay": "₹14.50 Lakhs",
+    "pricePerSqFt": 1208,
+    "pricePerCent": 527272,
+    "areaSqFt": 1200,
+    "areaCents": 2.75,
+    "dimensions": "30 ft x 40 ft",
+    "facing": "East",
+    "roadWidth": "33 ft Blacktop Tar Road",
+    "approval": "DTCP Approved",
+    "approvalNumber": "DTCP No. 112/2024",
+    "pattaStatus": "Clear Title & Immediate Patta Ready",
+    "status": "Available",
+    "isFeatured": true,
+    "description": "Just a few minutes’ walk to the beach in Tharuvaikulam! Your dream plot + dream home in one place. Buy the plot with optional turnkey house construction support (custom plans, basic, premium, and luxury options). Gated community with 24-hr security, garden maintenance, road water lines, individual water tank construction, close to ECR Main Road with 24-hr bus service, and up to 90% loan financing assistance.",
+    "amenities": [
+      "Walking Distance to Beach",
+      "Gated Community with 24-Hour Security",
+      "Plot + Turnkey House Construction Support",
+      "Water Line Along Layout Roads",
+      "Individual Plot Water Tank Construction",
+      "Close to ECR Road (24-Hour Bus Service)",
+      "Up to 90% Loan Financing Support",
+      "Near 53-Acre Tourism Development Area"
+    ],
+    "landmarks": [
+      {
+        "name": "Tharuvaikulam Beach",
+        "distance": "350 m (Walking Distance)"
+      },
+      {
+        "name": "Thoothukudi–Rameswaram ECR Road",
+        "distance": "0.5 km (2 mins)"
+      },
+      {
+        "name": "53-Acre Tourism Development Area",
+        "distance": "1.2 km (3 mins)"
+      },
+      {
+        "name": "St. Michael Church",
+        "distance": "0.8 km (2 mins)"
+      },
+      {
+        "name": "Thoothukudi New Bus Stand",
+        "distance": "11.5 km (15 mins)"
+      }
+    ],
+    "images": [
+      "/images/product.png",
+      "/images/ap-rajan-garden-layout.jpg",
+      "/images/plot-house-construction.jpg",
+      "/images/completed-model-villa.jpg"
+    ],
+    "layoutPlotNumber": "Plot #02",
+    "coordinates": {
+      "lat": 8.8954,
+      "lng": 78.1632
+    },
+    "createdAt": "2026-10-26"
   }
 ]

@@ -19,7 +19,7 @@ export default function PlotCard({ plot }: PlotCardProps) {
       {/* Property Image Container */}
       <div className="relative aspect-land w-full bg-[#EAECE4] overflow-hidden">
         <Image
-          src={plot.images[0] || 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'}
+          src={plot.images[0] || '/images/real_estate.png'}
           alt={plot.title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

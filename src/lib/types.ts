@@ -1,4 +1,4 @@
-export type PlotStatus = 'Available' | 'Fast Selling' | 'Reserved' | 'Sold';
+export type PlotStatus = 'Available' | 'Fast Selling' | 'Reserved' | 'Sold' | 'Under Review';
 
 export type ApprovalType = 'DTCP Approved' | 'RERA Registered' | 'DTCP & RERA Approved' | 'Panchayat Approved';
 
@@ -37,6 +37,10 @@ export interface Plot {
     lat: number;
     lng: number;
   };
+  sellerName?: string;
+  sellerPhone?: string;
+  sellerEmail?: string;
+  reraNumber?: string;
   createdAt: string;
 }
 
@@ -69,6 +73,10 @@ export interface Project {
   amenities: string[];
   landmarks: Landmark[];
   layoutPlots: ProjectLayoutPlot[];
+  highlights?: string[];
+  houseConstructionAvailable?: boolean;
+  loanFinancingOffer?: string;
+  beachDistance?: string;
 }
 
 export interface Enquiry {

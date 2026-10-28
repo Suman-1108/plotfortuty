@@ -14,13 +14,13 @@
     "approval": "DTCP & TNRERA Approved",
     "approvalNumber": "DTCP No. 128/2023 | TNRERA/P/1094/2023",
     "description": "Pearl Haven represents the pinnacle of residential plotted development in Thoothukudi. Situated in high-demand Korampallam, this master-planned community combines manicured 40ft blacktop avenues, underground stormwater drains, continuous sweet drinking water, and dedicated green reserves.",
-    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/product_land1.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "/images/harbour-enclave.jpg",
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land1.png",
+      "/images/product.png",
+      "/images/real_estate.png"
     ],
+
     "amenities": [
       "40 ft & 33 ft Blacktop Tar Roads",
       "Underground Storm Drainage Network",
@@ -31,6 +31,7 @@
       "Avenue Palms & Landscaped Parks",
       "Immediate Bank Loan Approval (SBI, HDFC, Canara)"
     ],
+
     "landmarks": [
       {
         "name": "District Collectorate Complex",
@@ -49,153 +50,29 @@
         "distance": "12 km"
       }
     ],
+
     "layoutPlots": [
-      {
-        "number": 1,
-        "size": "2400 sq.ft",
-        "cents": 5.51,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹42.0 L"
-      },
-      {
-        "number": 2,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹31.5 L"
-      },
-      {
-        "number": 3,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "North",
-        "status": "Reserved",
-        "price": "₹31.5 L"
-      },
-      {
-        "number": 4,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "East",
-        "status": "Available",
-        "price": "₹26.2 L"
-      },
-      {
-        "number": 5,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "East",
-        "status": "Available",
-        "price": "₹26.2 L"
-      },
-      {
-        "number": 6,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Sold",
-        "price": "₹21.0 L"
-      },
-      {
-        "number": 7,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Available",
-        "price": "₹21.0 L"
-      },
-      {
-        "number": 8,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹26.2 L"
-      },
-      {
-        "number": 9,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹31.5 L"
-      },
-      {
-        "number": 10,
-        "size": "2400 sq.ft",
-        "cents": 5.51,
-        "facing": "North-East",
-        "status": "Available",
-        "price": "₹43.5 L"
-      },
-      {
-        "number": 11,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "South",
-        "status": "Sold",
-        "price": "₹25.8 L"
-      },
-      {
-        "number": 12,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "South",
-        "status": "Available",
-        "price": "₹20.8 L"
-      },
-      {
-        "number": 13,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "South",
-        "status": "Available",
-        "price": "₹25.8 L"
-      },
-      {
-        "number": 14,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "South",
-        "status": "Sold",
-        "price": "₹31.0 L"
-      },
-      {
-        "number": 15,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "East",
-        "status": "Reserved",
-        "price": "₹26.2 L"
-      },
-      {
-        "number": 16,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Sold",
-        "price": "₹21.0 L"
-      },
-      {
-        "number": 17,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹26.2 L"
-      },
-      {
-        "number": 18,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "North-East",
-        "status": "Available",
-        "price": "₹32.0 L"
-      }
+      { "number": 1, "size": "2400 sq.ft", "cents": 5.51, "facing": "North", "status": "Sold", "price": "₹42.0 L" },
+      { "number": 2, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Sold", "price": "₹31.5 L" },
+      { "number": 3, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Reserved", "price": "₹31.5 L" },
+      { "number": 4, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Available", "price": "₹26.2 L" },
+      { "number": 5, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Available", "price": "₹26.2 L" },
+      { "number": 6, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹21.0 L" },
+      { "number": 7, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹21.0 L" },
+      { "number": 8, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹26.2 L" },
+      { "number": 9, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Sold", "price": "₹31.5 L" },
+      { "number": 10, "size": "2400 sq.ft", "cents": 5.51, "facing": "North-East", "status": "Available", "price": "₹43.5 L" },
+      { "number": 11, "size": "1500 sq.ft", "cents": 3.44, "facing": "South", "status": "Sold", "price": "₹25.8 L" },
+      { "number": 12, "size": "1200 sq.ft", "cents": 2.75, "facing": "South", "status": "Available", "price": "₹20.8 L" },
+      { "number": 13, "size": "1500 sq.ft", "cents": 3.44, "facing": "South", "status": "Available", "price": "₹25.8 L" },
+      { "number": 14, "size": "1800 sq.ft", "cents": 4.13, "facing": "South", "status": "Sold", "price": "₹31.0 L" },
+      { "number": 15, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Reserved", "price": "₹26.2 L" },
+      { "number": 16, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹21.0 L" },
+      { "number": 17, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹26.2 L" },
+      { "number": 18, "size": "1800 sq.ft", "cents": 4.13, "facing": "North-East", "status": "Available", "price": "₹32.0 L" }
     ]
   },
+
   {
     "id": "project-2",
     "slug": "palayam-greens-executive-layout",
@@ -211,12 +88,13 @@
     "approval": "DTCP Approved",
     "approvalNumber": "DTCP Reg No. 84/2024",
     "description": "Located directly along the bustling Palayamkottai 4-lane arterial road, Palayam Greens connects you to city conveniences while offering tranquil residential living. Clean documentation, high sweet water table, and ready for immediate construction.",
-    "image": "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/product_land2.png",
     "gallery": [
-      "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land2.png",
+      "/images/product_land6.png",
+      "/images/product.png"
     ],
+    
     "amenities": [
       "Direct NH-138 Highway Access",
       "33 ft Blacktop Tar Roads",
@@ -244,70 +122,14 @@
       }
     ],
     "layoutPlots": [
-      {
-        "number": 1,
-        "size": "2000 sq.ft",
-        "cents": 4.59,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹34.0 L"
-      },
-      {
-        "number": 2,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹25.0 L"
-      },
-      {
-        "number": 3,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Available",
-        "price": "₹25.0 L"
-      },
-      {
-        "number": 4,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Sold",
-        "price": "₹20.0 L"
-      },
-      {
-        "number": 5,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Available",
-        "price": "₹20.0 L"
-      },
-      {
-        "number": 6,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹24.5 L"
-      },
-      {
-        "number": 7,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Available",
-        "price": "₹24.5 L"
-      },
-      {
-        "number": 8,
-        "size": "1800 sq.ft",
-        "cents": 4.13,
-        "facing": "South",
-        "status": "Sold",
-        "price": "₹29.0 L"
-      }
+      { "number": 1, "size": "2000 sq.ft", "cents": 4.59, "facing": "North", "status": "Sold", "price": "₹34.0 L" },
+      { "number": 2, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹25.0 L" },
+      { "number": 3, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹25.0 L" },
+      { "number": 4, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹20.0 L" },
+      { "number": 5, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹20.0 L" },
+      { "number": 6, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹24.5 L" },
+      { "number": 7, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹24.5 L" },
+      { "number": 8, "size": "1800 sq.ft", "cents": 4.13, "facing": "South", "status": "Sold", "price": "₹29.0 L" }
     ]
   },
   {
@@ -325,10 +147,11 @@
     "approval": "DTCP & RERA Approved",
     "approvalNumber": "TNRERA/LAYOUT/340/2023",
     "description": "A contemporary master-planned plotted layout engineered to cater to professionals, port personnel, and NRI investors seeking secure, appreciation-oriented real estate in coastal Thoothukudi.",
-    "image": "/images/harbour-enclave.jpg",
+    "image": "/images/product_land3.png",
     "gallery": [
-      "/images/harbour-enclave.jpg",
-      "https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=1200&q=80"
+      "/images/product_land3.png",
+      "/images/product_land5.png",
+      "/images/product.png"
     ],
     "amenities": [
       "Gated Compound with Security Gate",
@@ -353,46 +176,104 @@
       }
     ],
     "layoutPlots": [
+      { "number": 21, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹19.5 L" },
+      { "number": 22, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹19.5 L" },
+      { "number": 23, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹24.0 L" },
+      { "number": 24, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹19.8 L" },
+      { "number": 25, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹24.5 L" }
+    ]
+  },
+  {
+    "id": "project-4",
+    "slug": "ap-rajan-garden-tharuvaikulam",
+    "name": "AP Rajan Garden",
+    "tagline": "Premium Plots & House Construction — Walking Distance to Beach",
+    "location": "Tharuvaikulam, Thoothukudi",
+    "address": "Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105",
+    "totalPlots": 56,
+    "availablePlots": 22,
+    "soldPlots": 34,
+    "priceRange": "₹9.8 L – ₹28.5 L",
+    "plotSizes": "800 to 2400 sq.ft (1.83 to 5.51 Cents)",
+    "approval": "DTCP Approved & Coastal Norms Cleared",
+    "approvalNumber": "DTCP No. 112/2024 | Coastal CRZ Cleared",
+    "description": "AP Rajan Garden offers an exclusive coastal living opportunity in Tharuvaikulam, Thoothukudi, just a few minutes’ walk to the beach. Your dream plot + your dream home – all in one place! Enjoy a complete turnkey plot purchase and house construction facility with customized floor plans (Basic, Premium & Luxury home options) from planning to completion. Strategically located close to the Thoothukudi–Rameswaram Main Road (ECR) with 24-hour bus connectivity, close to resorts, restaurants, churches, temples, and the reported 53-acre tourism development area. Secure gated community with 24-hour security, garden maintenance, water lines along all layout roads, individual plot water tank construction, and up to 90% composite loan financing support.",
+    "image": "/images/ap-rajan-garden-layout.jpg",
+    "gallery": [
+      "/images/ap-rajan-garden-layout.jpg",
+      "/images/plot-house-construction.jpg",
+      "/images/completed-model-villa.jpg",
+      "/images/real_estate.png"
+    ],
+    "highlights": [
+      "Walking Distance to the Beach",
+      "Plot + Turnkey House Construction Facility",
+      "Up to 90% Loan Financing Support",
+      "Thoothukudi–Rameswaram ECR Belt"
+    ],
+    "houseConstructionAvailable": true,
+    "loanFinancingOffer": "Up to 90% Loan Financing Available for Plot + House Construction (Subject to Bank Eligibility)",
+    "beachDistance": "Few Minutes' Walk to the Beach",
+    "amenities": [
+      "Walking Distance to the Beach",
+      "Gated Community with Grand Entrance",
+      "24-Hour Security Service",
+      "Garden Maintenance & Tree Plantation",
+      "Water Line Available Along Layout Roads",
+      "Individual Plot Water Tank Construction",
+      "Close to Thoothukudi–Rameswaram Main Road (ECR)",
+      "24-Hour Frequent Bus Service in Area",
+      "Plot + House Construction Facility (Basic, Premium & Luxury)",
+      "Customized House Planning to Completion Support",
+      "Up to 90% Bank Loan Financing Guidance",
+      "Near Reported 53-Acre Tourism Development Area"
+    ],
+    "landmarks": [
       {
-        "number": 21,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Sold",
-        "price": "₹19.5 L"
+        "name": "Tharuvaikulam Beach Shoreline",
+        "distance": "350 m (Walking Distance)"
       },
       {
-        "number": 22,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Sold",
-        "price": "₹19.5 L"
+        "name": "Thoothukudi–Rameswaram Main Road (ECR)",
+        "distance": "0.5 km (2 mins)"
       },
       {
-        "number": 23,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Sold",
-        "price": "₹24.0 L"
+        "name": "Reported 53-Acre Tourism Development Area",
+        "distance": "1.2 km (3 mins)"
       },
       {
-        "number": 24,
-        "size": "1200 sq.ft",
-        "cents": 2.75,
-        "facing": "East",
-        "status": "Available",
-        "price": "₹19.8 L"
+        "name": "St. Michael Church & Ancient Temples",
+        "distance": "0.8 km (2 mins)"
       },
       {
-        "number": 25,
-        "size": "1500 sq.ft",
-        "cents": 3.44,
-        "facing": "North",
-        "status": "Available",
-        "price": "₹24.5 L"
+        "name": "Nearby Coastal Resorts & Restaurants",
+        "distance": "0.6 km (2 mins)"
+      },
+      {
+        "name": "Thoothukudi New Bus Stand & City Center",
+        "distance": "11.5 km (15 mins)"
+      },
+      {
+        "name": "VOC Port Terminal & Industrial Corridor",
+        "distance": "16 km (20 mins)"
       }
+    ],
+    "layoutPlots": [
+      { "number": 1, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹14.5 L" },
+      { "number": 2, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹14.5 L" },
+      { "number": 3, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹18.2 L" },
+      { "number": 4, "size": "1800 sq.ft", "cents": 4.13, "facing": "North-East", "status": "Reserved", "price": "₹22.5 L" },
+      { "number": 5, "size": "2400 sq.ft", "cents": 5.51, "facing": "North", "status": "Available", "price": "₹28.5 L" },
+      { "number": 6, "size": "800 sq.ft", "cents": 1.83, "facing": "South", "status": "Sold", "price": "₹9.8 L" },
+      { "number": 7, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹14.5 L" },
+      { "number": 8, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹18.2 L" },
+      { "number": 9, "size": "1200 sq.ft", "cents": 2.75, "facing": "South", "status": "Sold", "price": "₹14.2 L" },
+      { "number": 10, "size": "1800 sq.ft", "cents": 4.13, "facing": "East", "status": "Available", "price": "₹22.0 L" },
+      { "number": 11, "size": "1200 sq.ft", "cents": 2.75, "facing": "North", "status": "Available", "price": "₹14.5 L" },
+      { "number": 12, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Reserved", "price": "₹18.5 L" },
+      { "number": 13, "size": "2000 sq.ft", "cents": 4.59, "facing": "North-East", "status": "Available", "price": "₹24.8 L" },
+      { "number": 14, "size": "1200 sq.ft", "cents": 2.75, "facing": "South", "status": "Sold", "price": "₹14.0 L" },
+      { "number": 15, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹14.5 L" }
     ]
   }
 ]

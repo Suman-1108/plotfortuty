@@ -12,7 +12,11 @@ import {
   ArrowRight,
   Info,
   Building,
-  Navigation
+  Navigation,
+  Home,
+  Banknote,
+  Sparkles,
+  Waves
 } from 'lucide-react';
 
 interface ProjectsClientProps {
@@ -50,7 +54,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
         </div>
 
         {/* Project Selector Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
           {projects.map((proj) => {
             const isCurrent = proj.slug === activeProject.slug;
             return (
@@ -154,6 +158,79 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                 </a>
               </div>
             </div>
+
+            {/* Special Highlight for Turnkey House Construction & Beach Living (e.g. AP Rajan Garden) */}
+            {(activeProject.houseConstructionAvailable || activeProject.loanFinancingOffer) && (
+              <div className="bg-gradient-to-br from-[#1C2618] to-[#253523] rounded-2xl p-6 sm:p-8 text-white border border-[#3C4E34] shadow-md">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-[#B7E436] text-[#142016] inline-flex items-center gap-1.5">
+                        <Home className="w-3.5 h-3.5" />
+                        <span>Plot + House Construction Facility</span>
+                      </span>
+                      {activeProject.beachDistance && (
+                        <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-white/10 text-cyan-200 border border-white/10 inline-flex items-center gap-1">
+                          <Waves className="w-3.5 h-3.5 text-cyan-300" />
+                          <span>{activeProject.beachDistance}</span>
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-black text-white">
+                      Your Dream Plot + Your Dream Home — All in One Place!
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#DCE6CE] max-w-2xl leading-relaxed">
+                      Buy your plot and build your home seamlessly with complete turnkey construction assistance: customized architectural floor plans, Basic, Premium &amp; Luxury house options, and end-to-end management from municipal planning to completion handover.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
+                      <div className="flex items-center space-x-2 text-[#E8FF85]">
+                        <CheckCircle2 className="w-4 h-4 text-[#B7E436] shrink-0" />
+                        <span>Customized 2BHK &amp; 3BHK Coastal House Plans</span>
+                      </div>
+                      <div className="flex items-center space-x-2 text-[#E8FF85]">
+                        <CheckCircle2 className="w-4 h-4 text-[#B7E436] shrink-0" />
+                        <span>Basic, Premium &amp; Luxury Finish Packages</span>
+                      </div>
+                      <div className="flex items-center space-x-2 text-[#E8FF85]">
+                        <CheckCircle2 className="w-4 h-4 text-[#B7E436] shrink-0" />
+                        <span>24-Hour Security &amp; Layout Water Infrastructure</span>
+                      </div>
+                      <div className="flex items-center space-x-2 text-[#E8FF85]">
+                        <CheckCircle2 className="w-4 h-4 text-[#B7E436] shrink-0" />
+                        <span>Close to ECR Road with 24-Hour Bus Service</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:w-80 bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 text-center flex flex-col justify-between space-y-4">
+                    <div>
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#D8FF54] uppercase tracking-wider">
+                        <Banknote className="w-3.5 h-3.5" />
+                        <span>Financing Opportunity</span>
+                      </span>
+                      <h4 className="text-lg font-black text-white mt-1">
+                        Up to 90% Loan Financing!
+                      </h4>
+                      <p className="text-[11px] text-gray-300 mt-1 leading-snug">
+                        Explore composite loan options for plot purchase + home construction together. (Subject to bank approval &amp; CIBIL criteria).
+                      </p>
+                    </div>
+
+                    <a
+                      href={`https://wa.me/919842155678?text=${encodeURIComponent(
+                        `Hello Plot 4 Tuty, I am interested in ${activeProject.name} (Plot + House Construction Package & 90% Loan Guidance). Please share details.`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center space-x-2 py-3 px-4 bg-[#B7E436] hover:bg-[#A3CE2A] text-[#142016] rounded-xl font-bold text-xs shadow-md transition-all"
+                    >
+                      <MessageSquare className="w-4 h-4" />
+                      <span>Inquire Construction Packages</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Layout Blueprint & Individual Plot Grid */}
             <div>

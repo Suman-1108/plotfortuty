@@ -142,8 +142,8 @@ export default function AdminPage() {
       description: 'Prime residential plot with sweet ground water and wide tar road access.',
       layoutPlotNumber: `Plot #${plots.length + 1}`,
       images: [
-        'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
-        '/images/harbour-enclave.jpg',
+        '/images/product.png',
+        '/images/product_land1.png',
       ],
     });
     setPlotFormError('');
@@ -453,7 +453,7 @@ export default function AdminPage() {
                           <div className="flex items-center space-x-3">
                             <div className="relative w-12 h-10 rounded overflow-hidden bg-gray-100 shrink-0">
                               <Image
-                                src={plot.images[0] || 'https://images.unsplash.com/photo-1500382017468-9049fed747ef'}
+                                src={plot.images[0] || '/images/real_estate.png'}
                                 alt=""
                                 fill
                                 className="object-cover"

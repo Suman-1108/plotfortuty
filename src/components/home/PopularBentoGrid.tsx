@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, MapPin } from 'lucide-react';
@@ -32,11 +30,11 @@ export default function PopularBentoGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
           {/* Left Large Card (7 cols) */}
           <Link
-            href="/plots/pearl-haven-plot-18"
+            href="/plots/pearl-haven-corner-villa-plot-korampallam"
             className="group relative lg:col-span-7 rounded-3xl overflow-hidden min-h-[440px] sm:min-h-[500px] border border-[#DADDD5] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end p-6 sm:p-8"
           >
             <Image
-              src="/images/bento-parcels-aerial.jpg"
+              src="/images/product_land1.png"
               alt="Pearl Haven Enclave Phase 1 - Korampallam"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -99,12 +97,12 @@ export default function PopularBentoGrid() {
           <div className="lg:col-span-5 flex flex-col gap-4 sm:gap-6">
             {/* Top Wide Card */}
             <Link
-              href="/plots/harbour-enclave-villa-plot"
+              href="/plots/ap-rajan-garden-beachside-villa-plot-tharuvaikulam"
               className="group relative rounded-3xl overflow-hidden min-h-[230px] sm:min-h-[240px] border border-[#DADDD5] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end p-5 sm:p-6"
             >
               <Image
-                src="/images/harbour-enclave.jpg"
-                alt="Harbour Enclave Phase 1 - Coastal Villa Plot"
+                src="/images/ap-rajan-garden-layout.jpg"
+                alt="AP Rajan Garden - Beachside Villa Plots & House Construction"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -127,14 +125,17 @@ export default function PopularBentoGrid() {
 
               <div className="relative z-10 flex items-end justify-between">
                 <div>
+                  <span className="inline-block px-2 py-0.5 rounded-full bg-cyan-900/80 border border-cyan-500 text-[9px] font-bold text-cyan-200 uppercase tracking-wider mb-1">
+                    🌊 Walk to Beach &bull; Plot + Construction
+                  </span>
                   <h3 className="text-lg sm:text-xl font-bold text-white drop-shadow-sm">
-                    Harbour Enclave Phase 1
+                    AP Rajan Garden
                   </h3>
                   <p className="text-xs text-gray-300 mt-0.5">
-                    Harbour Bypass Road Corridor
+                    Tharuvaikulam (ECR Belt), Thoothukudi
                   </p>
-                  <div className="text-lg sm:text-xl font-extrabold text-[#B7E436] mt-2">
-                    ₹ 19,80,000
+                  <div className="text-lg sm:text-xl font-extrabold text-[#B7E436] mt-1.5">
+                    ₹ 14,50,000
                   </div>
                 </div>
 
@@ -148,11 +149,11 @@ export default function PopularBentoGrid() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 flex-1">
               {/* Bottom Card 1 */}
               <Link
-                href="/plots/palayam-greens-corner-42"
+                href="/plots/palayam-greenfield-residential-plot-nh138"
                 className="group relative rounded-3xl overflow-hidden min-h-[210px] border border-[#DADDD5] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end p-4 sm:p-5"
               >
                 <Image
-                  src="/images/palayam-greens.jpg"
+                  src="/images/product_land2.png"
                   alt="Palayam Greens"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -185,11 +186,11 @@ export default function PopularBentoGrid() {
 
               {/* Bottom Card 2 */}
               <Link
-                href="/plots/millerpuram-central-avenue"
+                href="/plots/millerpuram-central-luxury-plot"
                 className="group relative rounded-3xl overflow-hidden min-h-[210px] border border-[#DADDD5] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-end p-4 sm:p-5"
               >
                 <Image
-                  src="/images/millerpuram.jpg"
+                  src="/images/product_land4.png"
                   alt="Millerpuram City Plot"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
