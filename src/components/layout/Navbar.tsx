@@ -16,7 +16,12 @@ interface CurrentUser {
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Fetch current buyer session on mount
   useEffect(() => {
@@ -63,14 +68,14 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F4F5F0]/95 backdrop-blur-md border-b border-[#DADDD5]">
+    <header suppressHydrationWarning className="sticky top-0 z-50 bg-[#F4F5F0]/95 backdrop-blur-md border-b border-[#DADDD5]">
       {/* Top Utility Bar (Buyer Trust, Phone Assistance & Login) */}
-      <div className="hidden lg:block bg-[#1F271B] text-[#F4F5F0] text-xs py-1.5 px-6">
+      <div suppressHydrationWarning className="hidden lg:block bg-[#1F271B] text-[#F4F5F0] text-xs py-1.5 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-6">
-            <span className="flex items-center space-x-1.5 text-gray-300">
+            <span suppressHydrationWarning className="flex items-center space-x-1.5 text-gray-300">
               <span className="inline-block w-2 h-2 rounded-full bg-[#B7E436]"></span>
-              <span>AP Rajan Garden &bull; DTCP Approved Beachside Plots &amp; Turnkey House Construction in Tharuvaikulam</span>
+              <span suppressHydrationWarning>AP Rajan Garden • DTCP Approved Beachside Plots &amp; Turnkey House Construction in Tharuvaikulam</span>
             </span>
             <span className="text-gray-500">|</span>
             <span className="text-gray-300 flex items-center space-x-1">
@@ -90,7 +95,7 @@ export default function Navbar() {
             <span className="text-gray-500">|</span>
 
             {/* Buyer Authentication State (Login / Profile) */}
-            {currentUser ? (
+            {mounted && currentUser ? (
               <div className="flex items-center space-x-2.5">
                 <span className="flex items-center space-x-1 text-[#D8FF54] font-bold">
                   <User className="w-3.5 h-3.5 text-[#B7E436]" />
@@ -228,7 +233,7 @@ export default function Navbar() {
             ))}
 
             {/* Mobile Buyer Login */}
-            {currentUser ? (
+            {mounted && currentUser ? (
               <div className="px-3 py-2 bg-white rounded-xl border border-gray-200 flex items-center justify-between text-xs">
                 <span className="font-bold text-[#1F271B] flex items-center gap-1.5">
                   <User className="w-3.5 h-3.5 text-[#668F35]" />
