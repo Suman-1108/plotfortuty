@@ -37,13 +37,9 @@ export default function SellerRegisterPage() {
   const [success, setSuccess] = useState(false);
 
   const availableCorridors = [
-    'Korampallam (Collectorate Hub)',
-    'Palayamkottai Road (NH 138)',
-    'Harbour Bypass & Coastal Corridor',
-    'Millerpuram & Central City',
-    'Muthiapuram Industrial Belt',
-    'Ettayapuram Road High-Growth',
-    'Tharuvaikulam Beachside'
+    'Tharuvaikulam (AP Rajan Garden Beachside & ECR)',
+    'Thoothukudi–Rameswaram ECR Corridor',
+    'Thoothukudi Coastal Tourism Zone'
   ];
 
   const toggleCorridor = (corridor: string) => {

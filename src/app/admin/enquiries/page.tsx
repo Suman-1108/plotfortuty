@@ -45,7 +45,7 @@ export default async function AdminEnquiriesPage() {
 
               <div className="text-xs text-gray-600 flex items-center gap-2">
                 <span className="font-semibold text-gray-800">Target Layout:</span>
-                <span className="text-[#668F35] font-bold">{lead.plotTitle || 'Pearl Haven Layout'}</span>
+                <span className="text-[#668F35] font-bold">{lead.plotTitle || 'AP Rajan Garden'}</span>
               </div>
 
               <p className="text-xs text-gray-600 bg-gray-50 p-3 rounded-xl border border-gray-100 italic">

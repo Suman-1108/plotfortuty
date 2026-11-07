@@ -33,17 +33,17 @@ export default function AboutPage() {
     {
       name: 'Dr. S. Karthikeyan',
       role: 'Consultant Surgeon, Thoothukudi',
-      text: 'Purchased a 4.13 Cents corner plot at Pearl Haven Layout near Korampallam Collectorate. The entire DTCP approval paper trail, legal opinion, and registration took less than 10 days. Exceptional professionalism.',
+      text: 'Purchased a 5.51 Cents beach villa plot at AP Rajan Garden in Tharuvaikulam. The turnkey house construction team handled everything from custom plans to foundation. Just walking distance to the beach with 24-hr security!',
     },
     {
       name: 'M. Anandha Kumar',
       role: 'Port Logistics Executive (VOC Port)',
-      text: 'Having worked in maritime logistics, I needed a plot near Harbour Bypass with high sweet water quality and good road width. Plot 4 Tuty showed me clear layout maps and handled the patta name transfer seamlessly.',
+      text: 'Having worked in maritime logistics, I chose AP Rajan Garden on the ECR road for its beach proximity, sweet water lines, and composite 90% loan assistance for both plot and house construction.',
     },
     {
       name: 'R. Meenakshi Sundaram',
       role: 'NRI Investor (Singapore / Native Tuticorin)',
-      text: 'Living overseas, investing in real estate back home in Tamil Nadu is usually stressful. Plot 4 Tuty provided video walkthroughs, RERA certificates, and video call legal review before booking. Highly recommended.',
+      text: 'Living overseas, investing in AP Rajan Garden in Tharuvaikulam was completely stress-free. Plot 4 Tuty provided video walkthroughs, DTCP No. 112/2024 clearance, and seamless registration.',
     },
   ];
 

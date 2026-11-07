@@ -1,193 +1,9 @@
 [
   {
-    "id": "project-1",
-    "slug": "pearl-haven-layout",
-    "name": "Pearl Haven Layout",
-    "tagline": "Signature Gated Villa Plots Near Thoothukudi Collectorate",
-    "location": "Korampallam, Thoothukudi",
-    "address": "Opp. Collectorate Administrative Enclave, Korampallam, Thoothukudi 628101",
-    "totalPlots": 48,
-    "availablePlots": 14,
-    "soldPlots": 34,
-    "priceRange": "₹22.5 L – ₹45.0 L",
-    "plotSizes": "1200 to 2400 sq.ft (2.75 to 5.5 Cents)",
-    "approval": "DTCP & TNRERA Approved",
-    "approvalNumber": "DTCP No. 128/2023 | TNRERA/P/1094/2023",
-    "description": "Pearl Haven represents the pinnacle of residential plotted development in Thoothukudi. Situated in high-demand Korampallam, this master-planned community combines manicured 40ft blacktop avenues, underground stormwater drains, continuous sweet drinking water, and dedicated green reserves.",
-    "image": "/images/product_land1.png",
-    "gallery": [
-      "/images/product_land1.png",
-      "/images/product.png",
-      "/images/real_estate.png"
-    ],
-
-    "amenities": [
-      "40 ft & 33 ft Blacktop Tar Roads",
-      "Underground Storm Drainage Network",
-      "Individual Sweet Water Connections",
-      "Solar Street Lighting Grid",
-      "24/7 Gated Security with CCTV",
-      "Perimeter Security Compound Wall",
-      "Avenue Palms & Landscaped Parks",
-      "Immediate Bank Loan Approval (SBI, HDFC, Canara)"
-    ],
-
-    "landmarks": [
-      {
-        "name": "District Collectorate Complex",
-        "distance": "1.2 km"
-      },
-      {
-        "name": "Tuticorin New Bus Stand",
-        "distance": "4.8 km"
-      },
-      {
-        "name": "St. Thomas School",
-        "distance": "1.5 km"
-      },
-      {
-        "name": "VOC Port Terminal",
-        "distance": "12 km"
-      }
-    ],
-
-    "layoutPlots": [
-      { "number": 1, "size": "2400 sq.ft", "cents": 5.51, "facing": "North", "status": "Sold", "price": "₹42.0 L" },
-      { "number": 2, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Sold", "price": "₹31.5 L" },
-      { "number": 3, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Reserved", "price": "₹31.5 L" },
-      { "number": 4, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Available", "price": "₹26.2 L" },
-      { "number": 5, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Available", "price": "₹26.2 L" },
-      { "number": 6, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹21.0 L" },
-      { "number": 7, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹21.0 L" },
-      { "number": 8, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹26.2 L" },
-      { "number": 9, "size": "1800 sq.ft", "cents": 4.13, "facing": "North", "status": "Sold", "price": "₹31.5 L" },
-      { "number": 10, "size": "2400 sq.ft", "cents": 5.51, "facing": "North-East", "status": "Available", "price": "₹43.5 L" },
-      { "number": 11, "size": "1500 sq.ft", "cents": 3.44, "facing": "South", "status": "Sold", "price": "₹25.8 L" },
-      { "number": 12, "size": "1200 sq.ft", "cents": 2.75, "facing": "South", "status": "Available", "price": "₹20.8 L" },
-      { "number": 13, "size": "1500 sq.ft", "cents": 3.44, "facing": "South", "status": "Available", "price": "₹25.8 L" },
-      { "number": 14, "size": "1800 sq.ft", "cents": 4.13, "facing": "South", "status": "Sold", "price": "₹31.0 L" },
-      { "number": 15, "size": "1500 sq.ft", "cents": 3.44, "facing": "East", "status": "Reserved", "price": "₹26.2 L" },
-      { "number": 16, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹21.0 L" },
-      { "number": 17, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹26.2 L" },
-      { "number": 18, "size": "1800 sq.ft", "cents": 4.13, "facing": "North-East", "status": "Available", "price": "₹32.0 L" }
-    ]
-  },
-
-  {
-    "id": "project-2",
-    "slug": "palayam-greens-executive-layout",
-    "name": "Palayam Greens Executive Layout",
-    "tagline": "High-Appreciation Plotted Enclave on 4-Lane Highway",
-    "location": "Palayamkottai Road, Thoothukudi",
-    "address": "Opposite Government Polytechnic, NH 138, Thoothukudi 628008",
-    "totalPlots": 36,
-    "availablePlots": 9,
-    "soldPlots": 27,
-    "priceRange": "₹19.5 L – ₹38.0 L",
-    "plotSizes": "1200 to 2200 sq.ft (2.75 to 5.0 Cents)",
-    "approval": "DTCP Approved",
-    "approvalNumber": "DTCP Reg No. 84/2024",
-    "description": "Located directly along the bustling Palayamkottai 4-lane arterial road, Palayam Greens connects you to city conveniences while offering tranquil residential living. Clean documentation, high sweet water table, and ready for immediate construction.",
-    "image": "/images/product_land2.png",
-    "gallery": [
-      "/images/product_land2.png",
-      "/images/product_land6.png",
-      "/images/product.png"
-    ],
-    
-    "amenities": [
-      "Direct NH-138 Highway Access",
-      "33 ft Blacktop Tar Roads",
-      "Electricity Substation Adjacent",
-      "Pure Ground Sweet Water",
-      "Clear Stone Demarcations",
-      "Security Post & Street Lights"
-    ],
-    "landmarks": [
-      {
-        "name": "Govt Polytechnic",
-        "distance": "0.8 km"
-      },
-      {
-        "name": "APCM College",
-        "distance": "2.1 km"
-      },
-      {
-        "name": "Tuticorin Old Railway Station",
-        "distance": "5.2 km"
-      },
-      {
-        "name": "Vagaikulam Airport",
-        "distance": "14 km"
-      }
-    ],
-    "layoutPlots": [
-      { "number": 1, "size": "2000 sq.ft", "cents": 4.59, "facing": "North", "status": "Sold", "price": "₹34.0 L" },
-      { "number": 2, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹25.0 L" },
-      { "number": 3, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹25.0 L" },
-      { "number": 4, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹20.0 L" },
-      { "number": 5, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹20.0 L" },
-      { "number": 6, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹24.5 L" },
-      { "number": 7, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹24.5 L" },
-      { "number": 8, "size": "1800 sq.ft", "cents": 4.13, "facing": "South", "status": "Sold", "price": "₹29.0 L" }
-    ]
-  },
-  {
-    "id": "project-3",
-    "slug": "harbour-enclave-phase-1",
-    "name": "Harbour Enclave Phase 1",
-    "tagline": "Modern Plotted Community Near VOC Port Corridor",
-    "location": "Harbour Bypass Road, Thoothukudi",
-    "address": "Near Muthiapuram Junction, Harbour Bypass, Thoothukudi 628005",
-    "totalPlots": 40,
-    "availablePlots": 11,
-    "soldPlots": 29,
-    "priceRange": "₹18.0 L – ₹32.0 L",
-    "plotSizes": "1200 to 1800 sq.ft (2.75 to 4.13 Cents)",
-    "approval": "DTCP & RERA Approved",
-    "approvalNumber": "TNRERA/LAYOUT/340/2023",
-    "description": "A contemporary master-planned plotted layout engineered to cater to professionals, port personnel, and NRI investors seeking secure, appreciation-oriented real estate in coastal Thoothukudi.",
-    "image": "/images/product_land3.png",
-    "gallery": [
-      "/images/product_land3.png",
-      "/images/product_land5.png",
-      "/images/product.png"
-    ],
-    "amenities": [
-      "Gated Compound with Security Gate",
-      "30 ft Wide Blacktop Roads",
-      "Children Play Park & Walking Track",
-      "Individual Water Connection",
-      "Avenue Plantations",
-      "Immediate Title Deed Handover"
-    ],
-    "landmarks": [
-      {
-        "name": "VOC Port Administrative Building",
-        "distance": "4.5 km"
-      },
-      {
-        "name": "Thermal Power Plant Hospital",
-        "distance": "3.0 km"
-      },
-      {
-        "name": "Harbour Beach Promenade",
-        "distance": "5.0 km"
-      }
-    ],
-    "layoutPlots": [
-      { "number": 21, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹19.5 L" },
-      { "number": 22, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Sold", "price": "₹19.5 L" },
-      { "number": 23, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Sold", "price": "₹24.0 L" },
-      { "number": 24, "size": "1200 sq.ft", "cents": 2.75, "facing": "East", "status": "Available", "price": "₹19.8 L" },
-      { "number": 25, "size": "1500 sq.ft", "cents": 3.44, "facing": "North", "status": "Available", "price": "₹24.5 L" }
-    ]
-  },
-  {
     "id": "project-4",
     "slug": "ap-rajan-garden-tharuvaikulam",
     "name": "AP Rajan Garden",
-    "tagline": "Premium Plots & House Construction — Walking Distance to Beach",
+    "tagline": "Premium Plots & Turnkey House Construction — Walking Distance to Beach",
     "location": "Tharuvaikulam, Thoothukudi",
     "address": "Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105",
     "totalPlots": 56,
@@ -203,30 +19,34 @@
       "/images/ap-rajan-garden-layout.jpg",
       "/images/plot-house-construction.jpg",
       "/images/completed-model-villa.jpg",
-      "/images/real_estate.png"
+      "/images/real_estate.png",
+      "/images/product.png"
     ],
     "highlights": [
-      "Walking Distance to the Beach",
+      "Walking Distance to the Beach (350 meters)",
       "Plot + Turnkey House Construction Facility",
-      "Up to 90% Loan Financing Support",
-      "Thoothukudi–Rameswaram ECR Belt"
+      "Up to 90% Composite Bank Loan Financing Support",
+      "Thoothukudi–Rameswaram ECR Belt with 24-Hour Bus Service",
+      "Gated Community with 24-Hour Security & Grand Entrance Arch",
+      "Water Line Along All Roads & Individual Plot Water Tank Facility",
+      "Near Reported 53-Acre Tourism Development Area & Coastal Resorts"
     ],
     "houseConstructionAvailable": true,
-    "loanFinancingOffer": "Up to 90% Loan Financing Available for Plot + House Construction (Subject to Bank Eligibility)",
-    "beachDistance": "Few Minutes' Walk to the Beach",
+    "loanFinancingOffer": "Up to 90% Composite Loan Financing Available for Plot + House Construction (Subject to Bank Eligibility)",
+    "beachDistance": "Few Minutes' Walk to the Beach (350 meters)",
     "amenities": [
-      "Walking Distance to the Beach",
-      "Gated Community with Grand Entrance",
-      "24-Hour Security Service",
-      "Garden Maintenance & Tree Plantation",
-      "Water Line Available Along Layout Roads",
-      "Individual Plot Water Tank Construction",
+      "Walking Distance to Tharuvaikulam Beach (350m)",
+      "Gated Community with Grand Entrance Arch",
+      "24-Hour Security & CCTV Surveillance",
+      "Garden Maintenance & Avenue Tree Plantation",
+      "Water Line Available Along All Layout Roads",
+      "Individual Plot Water Tank Construction Facility",
       "Close to Thoothukudi–Rameswaram Main Road (ECR)",
-      "24-Hour Frequent Bus Service in Area",
+      "24-Hour Frequent Bus Service in Immediate Area",
       "Plot + House Construction Facility (Basic, Premium & Luxury)",
-      "Customized House Planning to Completion Support",
-      "Up to 90% Bank Loan Financing Guidance",
-      "Near Reported 53-Acre Tourism Development Area"
+      "Customized Architectural Planning to Handover Support",
+      "Up to 90% Bank Loan Financing Guidance (SBI, Canara, HDFC)",
+      "Near Reported 53-Acre Tourism Development Area & Coastal Resorts"
     ],
     "landmarks": [
       {
@@ -246,7 +66,7 @@
         "distance": "0.8 km (2 mins)"
       },
       {
-        "name": "Nearby Coastal Resorts & Restaurants",
+        "name": "Nearby Coastal Seafood Resorts & Restaurants",
         "distance": "0.6 km (2 mins)"
       },
       {

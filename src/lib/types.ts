@@ -1,6 +1,11 @@
 export type PlotStatus = 'Available' | 'Fast Selling' | 'Reserved' | 'Sold' | 'Under Review';
 
-export type ApprovalType = 'DTCP Approved' | 'RERA Registered' | 'DTCP & RERA Approved' | 'Panchayat Approved';
+export type ApprovalType =
+  | 'DTCP Approved'
+  | 'RERA Registered'
+  | 'DTCP & RERA Approved'
+  | 'DTCP Approved & CRZ Cleared'
+  | 'Panchayat Approved';
 
 export interface Landmark {
   name: string;

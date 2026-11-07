@@ -32,12 +32,8 @@ export default function AdminSettingsPage() {
 
   // Corridors Management
   const [corridors, setCorridors] = useState([
-    'Korampallam (Collectorate & Judicial Hub)',
-    'Palayamkottai Road (Commercial & Educational Belt)',
-    'Harbour Express Bypass (Port & Industrial Corridor)',
-    'Millerpuram (Prime City Residential)',
-    'Muthiapuram (Harbour Suburb)',
-    'Ettayapuram Road (SIPCOT Corridor)'
+    'Tharuvaikulam (AP Rajan Garden Beachside & ECR)',
+    'Thoothukudi–Rameswaram ECR Corridor'
   ]);
   const [newCorridor, setNewCorridor] = useState('');
 

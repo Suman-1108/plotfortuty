@@ -21,30 +21,27 @@ import {
 } from 'lucide-react';
 
 const SAMPLE_LAYOUT: ProjectLayoutPlot[] = [
-  { number: 1, size: '2400 sq.ft', cents: 5.51, facing: 'North', status: 'Sold', price: '₹42.0 L' },
-  { number: 2, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Sold', price: '₹31.5 L' },
-  { number: 3, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Reserved', price: '₹31.5 L' },
-  { number: 4, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Available', price: '₹26.2 L' },
-  { number: 5, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Available', price: '₹26.2 L' },
-  { number: 6, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹21.0 L' },
-  { number: 7, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹21.0 L' },
-  { number: 8, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹26.2 L' },
-  { number: 9, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Sold', price: '₹31.5 L' },
-  { number: 10, size: '2400 sq.ft', cents: 5.51, facing: 'North-East', status: 'Available', price: '₹43.5 L' },
-  { number: 11, size: '1500 sq.ft', cents: 3.44, facing: 'South', status: 'Sold', price: '₹25.8 L' },
-  { number: 12, size: '1200 sq.ft', cents: 2.75, facing: 'South', status: 'Available', price: '₹20.8 L' },
-  { number: 13, size: '1500 sq.ft', cents: 3.44, facing: 'South', status: 'Available', price: '₹25.8 L' },
-  { number: 14, size: '1800 sq.ft', cents: 4.13, facing: 'South', status: 'Sold', price: '₹31.0 L' },
-  { number: 15, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Reserved', price: '₹26.2 L' },
-  { number: 16, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹21.0 L' },
-  { number: 17, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹26.2 L' },
-  { number: 18, size: '1800 sq.ft', cents: 4.13, facing: 'North-East', status: 'Available', price: '₹32.0 L' },
+  { number: 1, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹14.5 L' },
+  { number: 2, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹14.5 L' },
+  { number: 3, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Available', price: '₹18.2 L' },
+  { number: 4, size: '1800 sq.ft', cents: 4.13, facing: 'North-East', status: 'Reserved', price: '₹22.5 L' },
+  { number: 5, size: '2400 sq.ft', cents: 5.51, facing: 'North', status: 'Available', price: '₹28.5 L' },
+  { number: 6, size: '800 sq.ft', cents: 1.83, facing: 'South', status: 'Sold', price: '₹9.8 L' },
+  { number: 7, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹14.5 L' },
+  { number: 8, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Available', price: '₹18.2 L' },
+  { number: 9, size: '1200 sq.ft', cents: 2.75, facing: 'South', status: 'Sold', price: '₹14.2 L' },
+  { number: 10, size: '1800 sq.ft', cents: 4.13, facing: 'East', status: 'Available', price: '₹22.0 L' },
+  { number: 11, size: '1200 sq.ft', cents: 2.75, facing: 'North', status: 'Available', price: '₹14.5 L' },
+  { number: 12, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Reserved', price: '₹18.5 L' },
+  { number: 13, size: '2000 sq.ft', cents: 4.59, facing: 'North-East', status: 'Available', price: '₹24.8 L' },
+  { number: 14, size: '1200 sq.ft', cents: 2.75, facing: 'South', status: 'Sold', price: '₹14.0 L' },
+  { number: 15, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹14.5 L' },
 ];
 
 export default function MasterplanInteractive() {
   const [mapLevel, setMapLevel] = useState<'level1' | 'level2' | 'level3'>('level3');
-  const [selectedPlot, setSelectedPlot] = useState<ProjectLayoutPlot>(SAMPLE_LAYOUT[17]); // default to Plot #18
-  const [selectedCorridor, setSelectedCorridor] = useState('Korampallam');
+  const [selectedPlot, setSelectedPlot] = useState<ProjectLayoutPlot>(SAMPLE_LAYOUT[1]); // default to Plot #02
+  const [selectedCorridor, setSelectedCorridor] = useState('Tharuvaikulam');
 
   const availableCount = SAMPLE_LAYOUT.filter((p) => p.status === 'Available').length;
   const reservedCount = SAMPLE_LAYOUT.filter((p) => p.status === 'Reserved').length;
@@ -205,7 +202,7 @@ export default function MasterplanInteractive() {
                 onClick={() => setMapLevel('level3')}
                 className="px-4 py-2 rounded-full bg-[#1C2618] hover:bg-black text-[#B7E436] text-xs font-bold flex items-center gap-1.5 transition-colors self-start sm:self-auto cursor-pointer"
               >
-                <span>Jump to Pearl Haven Site Plan</span>
+                <span>Jump to AP Rajan Garden Site Plan</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -262,10 +259,10 @@ export default function MasterplanInteractive() {
                     Geographic Level 3 &bull; Project Site-Plan Layer
                   </span>
                   <h3 className="text-lg sm:text-xl font-black text-[#1F271B]">
-                    Pearl Haven Layout &bull; Phase 1 Approved Drawing
+                    AP Rajan Garden Layout &bull; Approved Coastal Drawing
                   </h3>
                   <div className="text-xs text-gray-500 font-mono">
-                    DTCP Approval No. 128/2023 &bull; Korampallam, Thoothukudi
+                    DTCP Approval No. 112/2024 &bull; CRZ Cleared &bull; Tharuvaikulam, Thoothukudi
                   </div>
                 </div>
 
@@ -289,11 +286,11 @@ export default function MasterplanInteractive() {
               {/* Approach Blacktop Tar Road */}
               <div className="bg-[#1C2618] text-white text-xs font-bold py-2.5 px-4 rounded-2xl mb-4 text-center flex items-center justify-center space-x-2 border border-[#2C3826]">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#B7E436] animate-pulse" />
-                <span>40 FT MAIN AVENUE BLACKTOP ROAD (CONNECTS TO DISTRICT COLLECTORATE HIGHWAY)</span>
+                <span>33 FT MAIN AVENUE BLACKTOP ROAD (CONNECTS TO THOOTHUKUDI–RAMESWARAM ECR &amp; BEACH)</span>
               </div>
 
               {/* Numbered Plot Grid matching seller's survey drawing */}
-              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2.5 mb-4">
+              <div className="grid grid-cols-3 sm:grid-cols-5 gap-2.5 mb-4">
                 {SAMPLE_LAYOUT.map((plot) => {
                   const isSelected = selectedPlot.number === plot.number;
                   let bgBadge = 'bg-[#B7E436] text-[#1C2618]';
@@ -330,7 +327,7 @@ export default function MasterplanInteractive() {
 
               {/* Internal 30ft Blacktop Sub-road */}
               <div className="bg-gray-300 text-gray-800 text-[11px] font-bold py-1.5 px-4 rounded-xl text-center">
-                30 FT INTERNAL CROSS TAR ROAD WITH UNDERGROUND DRAINAGE &amp; LED SOLAR LIGHTS
+                30 FT INTERNAL CROSS TAR ROAD WITH WATER LINES, INDIVIDUAL TANK POINTS &amp; 24-HR SECURITY
               </div>
             </div>
 
@@ -342,7 +339,7 @@ export default function MasterplanInteractive() {
                     Plot Specification
                   </span>
                   <h3 className="text-xl font-black text-[#1F271B]">
-                    Plot #{selectedPlot.number} Details
+                    AP Rajan Garden #{selectedPlot.number}
                   </h3>
                 </div>
                 <span
@@ -370,15 +367,23 @@ export default function MasterplanInteractive() {
                 </div>
                 <div className="flex justify-between items-center pt-2">
                   <span className="text-gray-500 font-medium">Approach Road</span>
-                  <strong className="text-gray-800 font-bold">40 ft Blacktop Tar Road</strong>
+                  <strong className="text-gray-800 font-bold">33 ft Blacktop Tar Road</strong>
                 </div>
                 <div className="flex justify-between items-center pt-2">
-                  <span className="text-gray-500 font-medium">Sweet Groundwater</span>
-                  <strong className="text-emerald-700 font-bold">Tested at 35 ft</strong>
+                  <span className="text-gray-500 font-medium">Beach Distance</span>
+                  <strong className="text-cyan-800 font-bold">350 m (Walk to Beach)</strong>
                 </div>
                 <div className="flex justify-between items-center pt-2">
-                  <span className="text-gray-500 font-medium">Legal Document</span>
-                  <strong className="text-gray-800 font-bold">Individual Patta Ready</strong>
+                  <span className="text-gray-500 font-medium">Legal Approval</span>
+                  <strong className="text-gray-800 font-bold">DTCP No. 112/2024 &bull; CRZ Cleared</strong>
+                </div>
+                <div className="flex justify-between items-center pt-2">
+                  <span className="text-gray-500 font-medium">Turnkey Construction</span>
+                  <strong className="text-emerald-700 font-bold">Available (Basic / Premium / Luxury)</strong>
+                </div>
+                <div className="flex justify-between items-center pt-2">
+                  <span className="text-gray-500 font-medium">Bank Loan Support</span>
+                  <strong className="text-emerald-700 font-bold">Up to 90% Financing</strong>
                 </div>
                 <div className="flex justify-between items-center pt-2">
                   <span className="text-gray-500 font-medium">Total Indicative Price</span>
@@ -391,7 +396,7 @@ export default function MasterplanInteractive() {
                 {selectedPlot.status === 'Available' ? (
                   <>
                     <a
-                      href={`https://wa.me/919842155678?text=Hello%20Plot%20For%20Thoothukudi,%20I%20am%20interested%20in%20Plot%20%23${selectedPlot.number}%20in%20Pearl%20Haven%20Layout%20(${selectedPlot.cents}%20Cents,%20${selectedPlot.price}).`}
+                      href={`https://wa.me/919842155678?text=Hello%20Plot%20For%20Tuty,%20I%20am%20interested%20in%20AP%20Rajan%20Garden%20Plot%20%23${selectedPlot.number}%20in%20Tharuvaikulam%20(${selectedPlot.cents}%20Cents,%20${selectedPlot.price}).`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3 rounded-2xl bg-[#B7E436] hover:bg-[#A6D42A] text-[#1C2618] text-xs font-black transition-all flex items-center justify-center space-x-2 shadow-xs cursor-pointer"

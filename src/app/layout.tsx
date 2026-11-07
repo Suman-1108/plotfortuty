@@ -4,18 +4,19 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'PLOT 4 TUTY — Find Your Land. Build Your Future. | Residential Plots in Thoothukudi',
+  title: 'AP Rajan Garden | Plot 4 Tuty — Beachside Plots & Turnkey House Construction in Thoothukudi',
   description:
-    'Discover DTCP-approved and TNRERA-registered residential land plots in Thoothukudi, Tamil Nadu. Korampallam, Millerpuram, Palayamkottai Road, and Harbour Bypass land layouts with 100% clear legal titles.',
+    'Discover DTCP-approved residential plots and turnkey house construction at AP Rajan Garden in Tharuvaikulam, Thoothukudi, Tamil Nadu. Walking distance to beach, 33ft roads, sweet groundwater, and up to 90% loan financing.',
   keywords: [
+    'AP Rajan Garden',
+    'Tharuvaikulam plots',
     'Thoothukudi residential plots',
-    'Plots in Tuticorin',
+    'Beachside plots Tuticorin',
     'DTCP approved plots Thoothukudi',
-    'Korampallam plots',
-    'Millerpuram residential land',
-    'Palayamkottai Road plots',
+    'ECR road plots Thoothukudi',
+    'Turnkey house construction Tuticorin',
     'Plot 4 Tuty',
-    'Tamil Nadu land for sale',
+    'Tamil Nadu beachside land for sale',
   ],
   authors: [{ name: 'Plot 4 Tuty' }],
   metadataBase: new URL('https://plot4tuty.com'),

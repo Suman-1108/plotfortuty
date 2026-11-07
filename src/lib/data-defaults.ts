@@ -2,278 +2,9 @@ import { Plot, Project, Enquiry } from './types';
 
 export const INITIAL_PLOTS: Plot[] = [
   {
-    id: 'plot-1',
-    slug: 'pearl-haven-corner-villa-plot-korampallam',
-    title: 'Pearl Haven - Premium Corner Villa Plot',
-    project: 'Pearl Haven Layout',
-    location: 'Korampallam',
-    address: 'Near District Collectorate Complex, Korampallam, Thoothukudi, Tamil Nadu 628101',
-    price: 3200000,
-    priceDisplay: '₹32.00 Lakhs',
-    pricePerSqFt: 1777,
-    pricePerCent: 775000,
-    areaSqFt: 1800,
-    areaCents: 4.13,
-    dimensions: '40 ft x 45 ft',
-    facing: 'North-East',
-    roadWidth: '40 ft Wide Blacktop Tar Road',
-    approval: 'DTCP & RERA Approved',
-    approvalNumber: 'DTCP No. 128/2023 | TNRERA/P/1094/2023',
-    pattaStatus: 'Individual Clear Patta Ready',
-    status: 'Available',
-    isFeatured: true,
-    description: 'An exclusive corner residential plot in the prestigious Pearl Haven gated community, just 3 minutes from the Thoothukudi District Collectorate. Features direct 40ft blacktop road access, sweet drinking groundwater at 35 feet, underground stormwater drainage, and avenue palm trees.',
-    amenities: [
-      '40 ft Blacktop Tar Road',
-      'Underground Stormwater Drainage',
-      'Sweet Groundwater (35 ft)',
-      'Solar Street Lighting',
-      '24/7 Gated Community Security',
-      'Individual Water Connection Point',
-      'Avenue Tree Plantation',
-      'Children Play Area Reserve'
-    ],
-    landmarks: [
-      { name: 'Thoothukudi District Collectorate', distance: '1.2 km (3 mins)' },
-      { name: 'Spic Nagar Hospital & Clinic', distance: '3.5 km (8 mins)' },
-      { name: 'Tuticorin New Bus Stand', distance: '4.8 km (10 mins)' },
-      { name: 'St. Thomas Matriculation Hr. Sec. School', distance: '1.5 km (4 mins)' },
-      { name: 'Tuticorin VOC Port Trust', distance: '12 km (18 mins)' }
-    ],
-    images: [
-      '/images/product_land1.png',
-      '/images/product.png',
-      '/images/real_estate.png'
-    ],
-    layoutPlotNumber: 'Plot #18',
-    coordinates: { lat: 8.7642, lng: 78.1348 },
-    createdAt: '2026-03-01'
-  },
-  {
-    id: 'plot-2',
-    slug: 'palayam-greenfield-residential-plot-nh138',
-    title: 'Palayam Greens - Four-Lane Connected Residential Plot',
-    project: 'Palayam Greens Executive Layout',
-    location: 'Palayamkottai Road',
-    address: 'Opposite Government Polytechnic, Palayamkottai Road (NH 138), Thoothukudi 628008',
-    price: 2450000,
-    priceDisplay: '₹24.50 Lakhs',
-    pricePerSqFt: 1633,
-    pricePerCent: 712000,
-    areaSqFt: 1500,
-    areaCents: 3.44,
-    dimensions: '30 ft x 50 ft',
-    facing: 'North',
-    roadWidth: '33 ft Blacktop Road',
-    approval: 'DTCP Approved',
-    approvalNumber: 'DTCP Reg No. 84/2024',
-    pattaStatus: '100% Verified Clean Mother Deed & Patta',
-    status: 'Fast Selling',
-    isFeatured: true,
-    description: 'Strategically located directly off Palayamkottai 4-lane highway, this rectangular north-facing residential parcel is ideal for immediate villa construction or high-yield land appreciation. Surrounded by established elite residences and top educational institutes.',
-    amenities: [
-      '33 ft Metal Tar Road',
-      'TNEB Power Line Ready',
-      'Borewell Sweet Water Tested',
-      'Security Cabin at Entrance',
-      'Demarcated Stone Pillars with Fencing',
-      'Street Name Boards & Signages'
-    ],
-    landmarks: [
-      { name: 'Government Polytechnic College', distance: '0.8 km (2 mins)' },
-      { name: 'Tuticorin Old Railway Station', distance: '5.2 km (12 mins)' },
-      { name: 'APCM Mahalaxmi College', distance: '2.1 km (5 mins)' },
-      { name: 'Tuticorin Airport (Vagaikulam)', distance: '14 km (18 mins)' }
-    ],
-    images: [
-      '/images/product_land2.png',
-      '/images/product_land6.png',
-      '/images/product.png'
-    ],
-    layoutPlotNumber: 'Plot #07',
-    coordinates: { lat: 8.7885, lng: 78.1124 },
-    createdAt: '2026-03-05'
-  },
-  {
-    id: 'plot-3',
-    slug: 'harbour-view-enclave-east-facing-muthiapuram',
-    title: 'Harbour Enclave - East Facing Coastal City Plot',
-    project: 'Harbour Enclave Phase 1',
-    location: 'Harbour Bypass Road',
-    address: 'Near VO Chidambaranar Port Junction, Muthiapuram, Thoothukudi 628005',
-    price: 1980000,
-    priceDisplay: '₹19.80 Lakhs',
-    pricePerSqFt: 1650,
-    pricePerCent: 718000,
-    areaSqFt: 1200,
-    areaCents: 2.75,
-    dimensions: '30 ft x 40 ft',
-    facing: 'East',
-    roadWidth: '30 ft Gated Road',
-    approval: 'DTCP & RERA Approved',
-    approvalNumber: 'TNRERA/LAYOUT/340/2023',
-    pattaStatus: 'Instant Sub-Division Patta Transfer',
-    status: 'Available',
-    isFeatured: true,
-    description: 'An affordable, high-demand east-facing compact plot inside a fully gated community near the booming Harbour Bypass corridor. Designed with modern infrastructure, LED street lamps, and lush avenue greens. Exceptional rental potential for port executives.',
-    amenities: [
-      'Gated Entrance Arch with Guard Room',
-      '30 ft Concrete Paver & Tar Roads',
-      'Individual Underground Water Connections',
-      'Street Tree Plantation',
-      'High Compound Wall Surrounding Layout',
-      'CCTV Surveillance Provision'
-    ],
-    landmarks: [
-      { name: 'VOC Port Administrative Building', distance: '4.5 km (8 mins)' },
-      { name: 'Thermal Power Plant Hospital', distance: '3.0 km (6 mins)' },
-      { name: 'Campbel International School', distance: '2.5 km (5 mins)' },
-      { name: 'Harbour Express Toll Plaza', distance: '2.8 km (5 mins)' }
-    ],
-    images: [
-      '/images/product_land3.png',
-      '/images/product_land5.png',
-      '/images/product.png'
-    ],
-    layoutPlotNumber: 'Plot #24',
-    coordinates: { lat: 8.7421, lng: 78.1492 },
-    createdAt: '2026-03-08'
-  },
-  {
-    id: 'plot-4',
-    slug: 'millerpuram-central-luxury-plot',
-    title: 'Millerpuram Prime - Central City Executive Plot',
-    project: 'Millerpuram Royal Enclave',
-    location: 'Millerpuram',
-    address: 'Near Holy Cross Matriculation School, Millerpuram, Thoothukudi 628002',
-    price: 4800000,
-    priceDisplay: '₹48.00 Lakhs',
-    pricePerSqFt: 2000,
-    pricePerCent: 871200,
-    areaSqFt: 2400,
-    areaCents: 5.51,
-    dimensions: '40 ft x 60 ft',
-    facing: 'North',
-    roadWidth: '40 ft Corporation Tar Road',
-    approval: 'DTCP & RERA Approved',
-    approvalNumber: 'DTCP No. 39/2022',
-    pattaStatus: 'Clear Urban Corporation Patta',
-    status: 'Reserved',
-    isFeatured: true,
-    description: 'Rare opportunity to acquire a full 1 Ground (5.51 Cents) luxury residential plot in the heart of Millerpuram. Prime urban neighborhood with immediate corporation water supply, underground sewage, high-voltage electricity, and walking distance to top hospitals.',
-    amenities: [
-      '40 ft Corporation Tar Road',
-      'Thoothukudi Corporation Water Supply',
-      'Underground Drainage (UGD) Connected',
-      'High-Speed Fiber Optic Internet Lines',
-      'Street LED Lighting',
-      'Clear Boundary Wall Demarcation'
-    ],
-    landmarks: [
-      { name: 'Holy Cross Matric School', distance: '0.4 km (1 min)' },
-      { name: 'Sundaram Arulraj Hospital', distance: '0.9 km (2 mins)' },
-      { name: 'Millerpuram Shopping Hub', distance: '0.6 km (2 mins)' },
-      { name: 'Tuticorin Main Bus Stand', distance: '3.1 km (7 mins)' }
-    ],
-    images: [
-      '/images/product_land4.png',
-      '/images/product_land1.png',
-      '/images/product.png'
-    ],
-    layoutPlotNumber: 'Plot #03',
-    coordinates: { lat: 8.8021, lng: 78.1365 },
-    createdAt: '2026-03-10'
-  },
-  {
-    id: 'plot-5',
-    slug: 'spic-nagar-green-meadows-affordable-plot',
-    title: 'Green Meadows - Peaceful Residential Plot',
-    project: 'Green Meadows Layout',
-    location: 'Muthiapuram',
-    address: 'Near Muthiapuram Main Road, Spic Nagar, Thoothukudi 628005',
-    price: 1580000,
-    priceDisplay: '₹15.80 Lakhs',
-    pricePerSqFt: 1316,
-    pricePerCent: 574000,
-    areaSqFt: 1200,
-    areaCents: 2.75,
-    dimensions: '30 ft x 40 ft',
-    facing: 'South',
-    roadWidth: '30 ft Tar Road',
-    approval: 'DTCP Approved',
-    approvalNumber: 'DTCP Approval No. 91/2023',
-    pattaStatus: 'Clear Legal Opinion & Patta',
-    status: 'Available',
-    isFeatured: false,
-    description: 'Value-packed plot situated in a serene green landscape behind Spic Nagar. Ideal for families wanting a calm peaceful living environment with easy commute to VOC Port, industrial centers, and schools.',
-    amenities: [
-      '30 ft Wide Layout Road',
-      'Clean Potable Water Source',
-      'Clear Stone Boundary Markers',
-      'Electricity Line Available',
-      'Ready for Construction'
-    ],
-    landmarks: [
-      { name: 'Spic Higher Secondary School', distance: '1.2 km (3 mins)' },
-      { name: 'Muthiapuram Railway Station', distance: '2.0 km (5 mins)' },
-      { name: 'Port Ring Expressway', distance: '3.5 km (6 mins)' }
-    ],
-    images: [
-      '/images/product_land5.png',
-      '/images/product_land3.png',
-      '/images/product.png'
-    ],
-    layoutPlotNumber: 'Plot #11',
-    coordinates: { lat: 8.7368, lng: 78.1388 },
-    createdAt: '2026-03-12'
-  },
-  {
-    id: 'plot-6',
-    slug: 'ettayapuram-avenue-high-growth-plot',
-    title: 'Ettayapuram Gateway - High Growth Investment Land',
-    project: 'Ettayapuram Smart Avenue',
-    location: 'Ettayapuram Road',
-    address: 'Near New SIPCOT Industrial Zone, Ettayapuram Road, Thoothukudi 628002',
-    price: 1420000,
-    priceDisplay: '₹14.20 Lakhs',
-    pricePerSqFt: 1183,
-    pricePerCent: 516000,
-    areaSqFt: 1200,
-    areaCents: 2.75,
-    dimensions: '30 ft x 40 ft',
-    facing: 'East',
-    roadWidth: '33 ft Blacktop Road',
-    approval: 'DTCP Approved',
-    approvalNumber: 'DTCP No. 177/2023',
-    pattaStatus: 'Verified Mother Deed & Patta',
-    status: 'Available',
-    isFeatured: false,
-    description: 'High-growth corridor plot located close to the upcoming manufacturing clusters and New SIPCOT. Excellent early investment with confirmed capital appreciation trajectory over the next 2-3 years.',
-    amenities: [
-      '33 ft Blacktop Road',
-      'Street Lighting System',
-      'Water Drainage Channels',
-      'Gated Layout Boundary',
-      'Ready Electric Transformer'
-    ],
-    landmarks: [
-      { name: 'New SIPCOT Phase 2', distance: '2.8 km (5 mins)' },
-      { name: 'VOC College', distance: '4.2 km (8 mins)' },
-      { name: 'Tuticorin Old Bus Stand', distance: '6.0 km (12 mins)' }
-    ],
-    images: [
-      '/images/product_land6.png',
-      '/images/product_land2.png',
-      '/images/product.png'
-    ],
-    layoutPlotNumber: 'Plot #32',
-    coordinates: { lat: 8.8251, lng: 78.1215 },
-    createdAt: '2026-03-14'
-  },
-  {
-    id: 'plot-7',
-    slug: 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
-    title: 'AP Rajan Garden - Beachside Villa Plot + Construction',
+    id: 'plot-ap-1',
+    slug: 'ap-rajan-garden-villa-plot-01',
+    title: 'AP Rajan Garden - East Facing Villa Plot #01',
     project: 'AP Rajan Garden',
     location: 'Tharuvaikulam',
     address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
@@ -286,14 +17,59 @@ export const INITIAL_PLOTS: Plot[] = [
     dimensions: '30 ft x 40 ft',
     facing: 'East',
     roadWidth: '33 ft Blacktop Tar Road',
-    approval: 'DTCP Approved',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Sold',
+    isFeatured: false,
+    description: 'Prime East-facing residential villa plot in AP Rajan Garden, Tharuvaikulam, within walking distance of the beach. 33ft wide blacktop road, sweet groundwater connection point, and underground drainage layout.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '33 ft Blacktop Tar Road',
+      'Gated Community with 24-Hour Security',
+      'Water Line Along Roads',
+      'Sweet Groundwater',
+      'Close to ECR Main Road'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m (Walking Distance)' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km (2 mins)' },
+      { name: '53-Acre Tourism Development Area', distance: '1.2 km (3 mins)' },
+      { name: 'Thoothukudi New Bus Stand', distance: '11.5 km (15 mins)' }
+    ],
+    images: [
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/product.png',
+      '/images/real_estate.png'
+    ],
+    layoutPlotNumber: 'Plot #01',
+    coordinates: { lat: 8.8954, lng: 78.1632 },
+    createdAt: '2026-10-20'
+  },
+  {
+    id: 'plot-ap-2',
+    slug: 'ap-rajan-garden-beachside-villa-plot-02',
+    title: 'AP Rajan Garden - Beachside Villa Plot + Construction #02',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1450000,
+    priceDisplay: '₹14.50 Lakhs',
+    pricePerSqFt: 1208,
+    pricePerCent: 527272,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
     approvalNumber: 'DTCP No. 112/2024',
     pattaStatus: 'Clear Title & Immediate Patta Ready',
     status: 'Available',
     isFeatured: true,
     description: 'Just a few minutes’ walk to the beach in Tharuvaikulam! Your dream plot + dream home in one place. Buy the plot with optional turnkey house construction support (custom plans, basic, premium, and luxury options). Gated community with 24-hr security, garden maintenance, road water lines, individual water tank construction, close to ECR Main Road with 24-hr bus service, and up to 90% loan financing assistance.',
     amenities: [
-      'Walking Distance to Beach',
+      'Walking Distance to Beach (350m)',
       'Gated Community with 24-Hour Security',
       'Plot + Turnkey House Construction Support',
       'Water Line Along Layout Roads',
@@ -310,6 +86,7 @@ export const INITIAL_PLOTS: Plot[] = [
       { name: 'Thoothukudi New Bus Stand', distance: '11.5 km (15 mins)' }
     ],
     images: [
+      '/images/product.png',
       '/images/ap-rajan-garden-layout.jpg',
       '/images/plot-house-construction.jpg',
       '/images/completed-model-villa.jpg'
@@ -317,162 +94,562 @@ export const INITIAL_PLOTS: Plot[] = [
     layoutPlotNumber: 'Plot #02',
     coordinates: { lat: 8.8954, lng: 78.1632 },
     createdAt: '2026-10-26'
+  },
+  {
+    id: 'plot-ap-3',
+    slug: 'ap-rajan-garden-avenue-plot-03',
+    title: 'AP Rajan Garden - Prime North Facing Avenue Plot #03',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1820000,
+    priceDisplay: '₹18.20 Lakhs',
+    pricePerSqFt: 1213,
+    pricePerCent: 529069,
+    areaSqFt: 1500,
+    areaCents: 3.44,
+    dimensions: '30 ft x 50 ft',
+    facing: 'North',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'Spacious 3.44 Cents north-facing residential plot on the main 33ft central layout avenue. Ideal for duplex independent bungalow with custom floor plan. Full turnkey construction available with up to 90% loan assistance.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '33 ft Wide Central Blacktop Avenue',
+      'Plot + Villa Construction Support',
+      'Underground Water Supply Line',
+      '24-Hour Security & CCTV',
+      'Avenue Tree Plantation',
+      'Bank Loan Assistance up to 90%'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m (Walking Distance)' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km (2 mins)' },
+      { name: 'Coastal Seafood Restaurants', distance: '0.6 km (2 mins)' },
+      { name: 'Thoothukudi City Center', distance: '12 km (15 mins)' }
+    ],
+    images: [
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/completed-model-villa.jpg'
+    ],
+    layoutPlotNumber: 'Plot #03',
+    coordinates: { lat: 8.8955, lng: 78.1633 },
+    createdAt: '2026-10-24'
+  },
+  {
+    id: 'plot-ap-4',
+    slug: 'ap-rajan-garden-villa-plot-04',
+    title: 'AP Rajan Garden - North-East Corner Villa Plot #04',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 2250000,
+    priceDisplay: '₹22.50 Lakhs',
+    pricePerSqFt: 1250,
+    pricePerCent: 544794,
+    areaSqFt: 1800,
+    areaCents: 4.13,
+    dimensions: '40 ft x 45 ft',
+    facing: 'North-East',
+    roadWidth: '33 ft Corner Blacktop Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Reserved',
+    isFeatured: false,
+    description: 'Auspicious North-East corner plot measuring 4.13 Cents in AP Rajan Garden. Dual road access, excellent ventilation, and proximity to the landscaped community garden and security arch.',
+    amenities: [
+      'Walking Distance to Beach',
+      'Dual Corner Road Access (33ft)',
+      'North-East Auspicious Vastu',
+      '24-Hour Gated Community Security',
+      'Immediate Water Connection'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'ECR Main Road', distance: '0.5 km' },
+      { name: 'St. Michael Church', distance: '0.8 km' }
+    ],
+    images: [
+      '/images/completed-model-villa.jpg',
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/real_estate.png'
+    ],
+    layoutPlotNumber: 'Plot #04',
+    coordinates: { lat: 8.8956, lng: 78.1634 },
+    createdAt: '2026-10-22'
+  },
+  {
+    id: 'plot-ap-5',
+    slug: 'ap-rajan-garden-grand-villa-plot-05',
+    title: 'AP Rajan Garden - Grand Beach Villa Plot #05 (5.5 Cents)',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 2850000,
+    priceDisplay: '₹28.50 Lakhs',
+    pricePerSqFt: 1187,
+    pricePerCent: 517241,
+    areaSqFt: 2400,
+    areaCents: 5.51,
+    dimensions: '40 ft x 60 ft',
+    facing: 'North',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'The largest premium residential plot in AP Rajan Garden spanning 5.51 Cents (2,400 sq.ft). Perfect for an expansive luxury coastal villa with private swimming pool, landscaped lawn, and multiple car parking. Optional complete turnkey villa construction package with up to 90% loan assistance.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      'Large 5.51 Cents Parcel for Luxury Villa',
+      'Plot + Luxury Turnkey Villa Construction',
+      '33 ft Tar Road Frontage',
+      '24-Hour Gated Community Security',
+      'Sweet Groundwater & Individual Water Tank Construction',
+      'Up to 90% Bank Loan Support'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m (Walking Distance)' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km (2 mins)' },
+      { name: '53-Acre Tourism Development Area', distance: '1.2 km (3 mins)' },
+      { name: 'Thoothukudi City Center', distance: '11.5 km (15 mins)' }
+    ],
+    images: [
+      '/images/completed-model-villa.jpg',
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/real_estate.png'
+    ],
+    layoutPlotNumber: 'Plot #05',
+    coordinates: { lat: 8.8957, lng: 78.1635 },
+    createdAt: '2026-10-25'
+  },
+  {
+    id: 'plot-ap-6',
+    slug: 'ap-rajan-garden-budget-plot-06',
+    title: 'AP Rajan Garden - Compact Starter Plot #06',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 980000,
+    priceDisplay: '₹9.80 Lakhs',
+    pricePerSqFt: 1225,
+    pricePerCent: 535519,
+    areaSqFt: 800,
+    areaCents: 1.83,
+    dimensions: '20 ft x 40 ft',
+    facing: 'South',
+    roadWidth: '30 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Sold',
+    isFeatured: false,
+    description: 'Affordable starter plot in AP Rajan Garden under ₹10 Lakhs. Ideal for compact budget home construction with high appreciation potential near the coastal tourism corridor.',
+    amenities: [
+      'Walking Distance to Beach',
+      'Under ₹10 Lakhs Budget',
+      'Gated Community Security',
+      'Road Water Line Ready'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'ECR Main Road', distance: '0.5 km' }
+    ],
+    images: [
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/product.png'
+    ],
+    layoutPlotNumber: 'Plot #06',
+    coordinates: { lat: 8.8953, lng: 78.1631 },
+    createdAt: '2026-10-18'
+  },
+  {
+    id: 'plot-ap-7',
+    slug: 'ap-rajan-garden-east-plot-07',
+    title: 'AP Rajan Garden - East Facing Coastal Villa Plot #07',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1450000,
+    priceDisplay: '₹14.50 Lakhs',
+    pricePerSqFt: 1208,
+    pricePerCent: 527272,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'Direct East-facing residential parcel in the central row of AP Rajan Garden. Walking distance to Tharuvaikulam beach. Turnkey house building service available with architectural plans and bank loan support up to 90%.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '33 ft Tar Road Access',
+      'East Facing Vastu Compliant',
+      'Plot + Construction Facility',
+      '24-Hour Gated Community Security',
+      '90% Bank Loan Support'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km' },
+      { name: '53-Acre Tourism Area', distance: '1.2 km' }
+    ],
+    images: [
+      '/images/product.png',
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #07',
+    coordinates: { lat: 8.8954, lng: 78.1633 },
+    createdAt: '2026-10-23'
+  },
+  {
+    id: 'plot-ap-8',
+    slug: 'ap-rajan-garden-north-plot-08',
+    title: 'AP Rajan Garden - North Facing Residential Plot #08',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1820000,
+    priceDisplay: '₹18.20 Lakhs',
+    pricePerSqFt: 1213,
+    pricePerCent: 529069,
+    areaSqFt: 1500,
+    areaCents: 3.44,
+    dimensions: '30 ft x 50 ft',
+    facing: 'North',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: false,
+    description: '3.44 Cents residential plot with 30ft frontage on a 33ft avenue road. Excellent sweet water table and unhindered ocean breeze. Ready for immediate registration.',
+    amenities: [
+      'Walking Distance to Beach',
+      '33 ft Blacktop Road',
+      'Water Line Along Road',
+      '24-Hour Security',
+      'Bank Loan Assistance'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'ECR Main Road', distance: '0.5 km' }
+    ],
+    images: [
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #08',
+    coordinates: { lat: 8.8955, lng: 78.1634 },
+    createdAt: '2026-10-21'
+  },
+  {
+    id: 'plot-ap-9',
+    slug: 'ap-rajan-garden-south-plot-09',
+    title: 'AP Rajan Garden - South Facing Villa Plot #09',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1420000,
+    priceDisplay: '₹14.20 Lakhs',
+    pricePerSqFt: 1183,
+    pricePerCent: 516363,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'South',
+    roadWidth: '30 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Sold',
+    isFeatured: false,
+    description: 'Standard 1,200 sq.ft residential plot in AP Rajan Garden, sold to private homeowner for contemporary villa development.',
+    amenities: [
+      'Walking Distance to Beach',
+      '30 ft Blacktop Road',
+      'Sweet Groundwater'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' }
+    ],
+    images: [
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #09',
+    coordinates: { lat: 8.8953, lng: 78.1633 },
+    createdAt: '2026-10-15'
+  },
+  {
+    id: 'plot-ap-10',
+    slug: 'ap-rajan-garden-villa-plot-10',
+    title: 'AP Rajan Garden - Prime 4.13 Cents Villa Plot #10',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 2200000,
+    priceDisplay: '₹22.00 Lakhs',
+    pricePerSqFt: 1222,
+    pricePerCent: 532687,
+    areaSqFt: 1800,
+    areaCents: 4.13,
+    dimensions: '36 ft x 50 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'Generous 4.13 Cents East-facing plot directly overlooking landscaped avenue palm trees in AP Rajan Garden. Walking distance to the beach with complete turnkey house construction and 90% loan assistance.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '4.13 Cents Spacious Dimensions',
+      '33 ft Tar Road Frontage',
+      'Plot + Villa Construction Support',
+      '24-Hour Gated Community Security',
+      'Individual Water Tank Facility',
+      'Up to 90% Bank Loan Support'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km' },
+      { name: '53-Acre Tourism Development Area', distance: '1.2 km' },
+      { name: 'Thoothukudi City Center', distance: '11.5 km' }
+    ],
+    images: [
+      '/images/completed-model-villa.jpg',
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #10',
+    coordinates: { lat: 8.8956, lng: 78.1635 },
+    createdAt: '2026-10-24'
+  },
+  {
+    id: 'plot-ap-11',
+    slug: 'ap-rajan-garden-north-plot-11',
+    title: 'AP Rajan Garden - North Facing Villa Plot #11',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1450000,
+    priceDisplay: '₹14.50 Lakhs',
+    pricePerSqFt: 1208,
+    pricePerCent: 527272,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'North',
+    roadWidth: '30 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: false,
+    description: 'Ideal 2.75 Cents north-facing plot with immediate registration ready. Walking distance to the beach, high sweet water table, and turnkey construction option.',
+    amenities: [
+      'Walking Distance to Beach',
+      '30 ft Blacktop Road',
+      'Gated Community Security',
+      'Water Line Along Road'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'ECR Main Road', distance: '0.5 km' }
+    ],
+    images: [
+      '/images/product.png',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #11',
+    coordinates: { lat: 8.8955, lng: 78.1632 },
+    createdAt: '2026-10-22'
+  },
+  {
+    id: 'plot-ap-12',
+    slug: 'ap-rajan-garden-east-plot-12',
+    title: 'AP Rajan Garden - East Facing Plot #12',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1850000,
+    priceDisplay: '₹18.50 Lakhs',
+    pricePerSqFt: 1233,
+    pricePerCent: 537790,
+    areaSqFt: 1500,
+    areaCents: 3.44,
+    dimensions: '30 ft x 50 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Reserved',
+    isFeatured: false,
+    description: 'East-facing 3.44 Cents residential plot in AP Rajan Garden near the coastal entrance avenue. Reserved for turnkey bungalow construction.',
+    amenities: [
+      'Walking Distance to Beach',
+      '33 ft Tar Road',
+      'Plot + Construction Package'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' }
+    ],
+    images: [
+      '/images/plot-house-construction.jpg',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #12',
+    coordinates: { lat: 8.8956, lng: 78.1633 },
+    createdAt: '2026-10-19'
+  },
+  {
+    id: 'plot-ap-13',
+    slug: 'ap-rajan-garden-executive-plot-13',
+    title: 'AP Rajan Garden - Executive Corner Plot #13 (4.59 Cents)',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 2480000,
+    priceDisplay: '₹24.80 Lakhs',
+    pricePerSqFt: 1240,
+    pricePerCent: 540305,
+    areaSqFt: 2000,
+    areaCents: 4.59,
+    dimensions: '40 ft x 50 ft',
+    facing: 'North-East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'Executive 4.59 Cents plot with North-East corner orientation in AP Rajan Garden. Walking distance to the beach, panoramic coastal breezes, and immediate loan eligibility up to 90%.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '4.59 Cents Executive Dimensions',
+      '33 ft Tar Road Frontage',
+      'Plot + Turnkey Villa Construction Support',
+      '24-Hour Gated Community Security',
+      'Up to 90% Bank Loan Support'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km' },
+      { name: '53-Acre Tourism Development Area', distance: '1.2 km' }
+    ],
+    images: [
+      '/images/completed-model-villa.jpg',
+      '/images/ap-rajan-garden-layout.jpg',
+      '/images/product.png'
+    ],
+    layoutPlotNumber: 'Plot #13',
+    coordinates: { lat: 8.8957, lng: 78.1636 },
+    createdAt: '2026-10-25'
+  },
+  {
+    id: 'plot-ap-14',
+    slug: 'ap-rajan-garden-south-plot-14',
+    title: 'AP Rajan Garden - South Facing Plot #14',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1400000,
+    priceDisplay: '₹14.00 Lakhs',
+    pricePerSqFt: 1166,
+    pricePerCent: 509090,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'South',
+    roadWidth: '30 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Sold',
+    isFeatured: false,
+    description: 'Standard 2.75 Cents plot in AP Rajan Garden, sold for residential construction.',
+    amenities: [
+      'Walking Distance to Beach',
+      '30 ft Blacktop Road',
+      'Clear Title'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' }
+    ],
+    images: [
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #14',
+    coordinates: { lat: 8.8953, lng: 78.1634 },
+    createdAt: '2026-10-16'
+  },
+  {
+    id: 'plot-ap-15',
+    slug: 'ap-rajan-garden-east-plot-15',
+    title: 'AP Rajan Garden - East Facing Beach Villa Plot #15',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
+    price: 1450000,
+    priceDisplay: '₹14.50 Lakhs',
+    pricePerSqFt: 1208,
+    pricePerCent: 527272,
+    areaSqFt: 1200,
+    areaCents: 2.75,
+    dimensions: '30 ft x 40 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
+    approvalNumber: 'DTCP No. 112/2024',
+    pattaStatus: 'Clear Title & Immediate Patta Ready',
+    status: 'Available',
+    isFeatured: true,
+    description: 'Prime East-facing residential plot in AP Rajan Garden, Tharuvaikulam. Just 350 meters walk to the beach with complete turnkey house construction and 90% loan assistance.',
+    amenities: [
+      'Walking Distance to Beach (350m)',
+      '33 ft Tar Road Frontage',
+      'East Facing Vastu Compliant',
+      'Plot + Turnkey Villa Construction Support',
+      '24-Hour Gated Community Security',
+      'Up to 90% Bank Loan Support'
+    ],
+    landmarks: [
+      { name: 'Tharuvaikulam Beach', distance: '350 m' },
+      { name: 'Thoothukudi–Rameswaram ECR Road', distance: '0.5 km' },
+      { name: '53-Acre Tourism Development Area', distance: '1.2 km' }
+    ],
+    images: [
+      '/images/product.png',
+      '/images/completed-model-villa.jpg',
+      '/images/ap-rajan-garden-layout.jpg'
+    ],
+    layoutPlotNumber: 'Plot #15',
+    coordinates: { lat: 8.8954, lng: 78.1635 },
+    createdAt: '2026-10-26'
   }
 ];
 
 export const INITIAL_PROJECTS: Project[] = [
   {
-    id: 'project-1',
-    slug: 'pearl-haven-layout',
-    name: 'Pearl Haven Layout',
-    tagline: 'Signature Gated Villa Plots Near Thoothukudi Collectorate',
-    location: 'Korampallam, Thoothukudi',
-    address: 'Opp. Collectorate Administrative Enclave, Korampallam, Thoothukudi 628101',
-    totalPlots: 48,
-    availablePlots: 14,
-    soldPlots: 34,
-    priceRange: '₹22.5 L – ₹45.0 L',
-    plotSizes: '1200 to 2400 sq.ft (2.75 to 5.5 Cents)',
-    approval: 'DTCP & TNRERA Approved',
-    approvalNumber: 'DTCP No. 128/2023 | TNRERA/P/1094/2023',
-    description: 'Pearl Haven represents the pinnacle of residential plotted development in Thoothukudi. Situated in high-demand Korampallam, this master-planned community combines manicured 40ft blacktop avenues, underground stormwater drains, continuous sweet drinking water, and dedicated green reserves.',
-    image: '/images/product_land1.png',
-    gallery: [
-      '/images/product_land1.png',
-      '/images/product.png',
-      '/images/real_estate.png'
-    ],
-    amenities: [
-      '40 ft & 33 ft Blacktop Tar Roads',
-      'Underground Storm Drainage Network',
-      'Individual Sweet Water Connections',
-      'Solar Street Lighting Grid',
-      '24/7 Gated Security with CCTV',
-      'Perimeter Security Compound Wall',
-      'Avenue Palms & Landscaped Parks',
-      'Immediate Bank Loan Approval (SBI, HDFC, Canara)'
-    ],
-    landmarks: [
-      { name: 'District Collectorate Complex', distance: '1.2 km' },
-      { name: 'Tuticorin New Bus Stand', distance: '4.8 km' },
-      { name: 'St. Thomas School', distance: '1.5 km' },
-      { name: 'VOC Port Terminal', distance: '12 km' }
-    ],
-    layoutPlots: [
-      { number: 1, size: '2400 sq.ft', cents: 5.51, facing: 'North', status: 'Sold', price: '₹42.0 L' },
-      { number: 2, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Sold', price: '₹31.5 L' },
-      { number: 3, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Reserved', price: '₹31.5 L' },
-      { number: 4, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Available', price: '₹26.2 L' },
-      { number: 5, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Available', price: '₹26.2 L' },
-      { number: 6, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹21.0 L' },
-      { number: 7, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹21.0 L' },
-      { number: 8, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹26.2 L' },
-      { number: 9, size: '1800 sq.ft', cents: 4.13, facing: 'North', status: 'Sold', price: '₹31.5 L' },
-      { number: 10, size: '2400 sq.ft', cents: 5.51, facing: 'North-East', status: 'Available', price: '₹43.5 L' },
-      { number: 11, size: '1500 sq.ft', cents: 3.44, facing: 'South', status: 'Sold', price: '₹25.8 L' },
-      { number: 12, size: '1200 sq.ft', cents: 2.75, facing: 'South', status: 'Available', price: '₹20.8 L' },
-      { number: 13, size: '1500 sq.ft', cents: 3.44, facing: 'South', status: 'Available', price: '₹25.8 L' },
-      { number: 14, size: '1800 sq.ft', cents: 4.13, facing: 'South', status: 'Sold', price: '₹31.0 L' },
-      { number: 15, size: '1500 sq.ft', cents: 3.44, facing: 'East', status: 'Reserved', price: '₹26.2 L' },
-      { number: 16, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹21.0 L' },
-      { number: 17, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹26.2 L' },
-      { number: 18, size: '1800 sq.ft', cents: 4.13, facing: 'North-East', status: 'Available', price: '₹32.0 L' }
-    ]
-  },
-  {
-    id: 'project-2',
-    slug: 'palayam-greens-executive-layout',
-    name: 'Palayam Greens Executive Layout',
-    tagline: 'High-Appreciation Plotted Enclave on 4-Lane Highway',
-    location: 'Palayamkottai Road, Thoothukudi',
-    address: 'Opposite Government Polytechnic, NH 138, Thoothukudi 628008',
-    totalPlots: 36,
-    availablePlots: 9,
-    soldPlots: 27,
-    priceRange: '₹19.5 L – ₹38.0 L',
-    plotSizes: '1200 to 2200 sq.ft (2.75 to 5.0 Cents)',
-    approval: 'DTCP Approved',
-    approvalNumber: 'DTCP Reg No. 84/2024',
-    description: 'Located directly along the bustling Palayamkottai 4-lane arterial road, Palayam Greens connects you to city conveniences while offering tranquil residential living. Clean documentation, high sweet water table, and ready for immediate construction.',
-    image: '/images/product_land2.png',
-    gallery: [
-      '/images/product_land2.png',
-      '/images/product_land6.png',
-      '/images/product.png'
-    ],
-    amenities: [
-      'Direct NH-138 Highway Access',
-      '33 ft Blacktop Tar Roads',
-      'Electricity Substation Adjacent',
-      'Pure Ground Sweet Water',
-      'Clear Stone Demarcations',
-      'Security Post & Street Lights'
-    ],
-    landmarks: [
-      { name: 'Govt Polytechnic', distance: '0.8 km' },
-      { name: 'APCM College', distance: '2.1 km' },
-      { name: 'Tuticorin Old Railway Station', distance: '5.2 km' },
-      { name: 'Vagaikulam Airport', distance: '14 km' }
-    ],
-    layoutPlots: [
-      { number: 1, size: '2000 sq.ft', cents: 4.59, facing: 'North', status: 'Sold', price: '₹34.0 L' },
-      { number: 2, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹25.0 L' },
-      { number: 3, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Available', price: '₹25.0 L' },
-      { number: 4, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹20.0 L' },
-      { number: 5, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹20.0 L' },
-      { number: 6, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Sold', price: '₹24.5 L' },
-      { number: 7, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Available', price: '₹24.5 L' },
-      { number: 8, size: '1800 sq.ft', cents: 4.13, facing: 'South', status: 'Sold', price: '₹29.0 L' }
-    ]
-  },
-  {
-    id: 'project-3',
-    slug: 'harbour-enclave-gated-community',
-    name: 'Harbour Enclave Gated Community',
-    tagline: 'Port Corridor Coastal Residential Plotted Community',
-    location: 'Harbour Bypass Road, Thoothukudi',
-    address: 'Muthiapuram Port Link Road, Thoothukudi 628005',
-    totalPlots: 40,
-    availablePlots: 18,
-    soldPlots: 22,
-    priceRange: '₹18.0 L – ₹32.0 L',
-    plotSizes: '1200 to 2000 sq.ft (2.75 to 4.59 Cents)',
-    approval: 'DTCP & TNRERA Approved',
-    approvalNumber: 'TNRERA/LAYOUT/340/2023',
-    description: 'A planned gated community offering high rental demand from port, maritime, and thermal energy executives. High perimeter walls, 30ft paved blacktop roads, sweet potable water line connections, and CCTV provisions.',
-    image: '/images/product_land3.png',
-    gallery: [
-      '/images/product_land3.png',
-      '/images/product_land5.png',
-      '/images/product.png'
-    ],
-    amenities: [
-      'Gated Grand Entrance Archway',
-      '30 ft Blacktop Internal Roads',
-      'CCTV Camera Surveillance',
-      'Children Play Garden',
-      'Individual Water Connection Taps',
-      'LED Solar Street Lighting'
-    ],
-    landmarks: [
-      { name: 'VOC Port Terminal', distance: '4.5 km' },
-      { name: 'Muthiapuram Station', distance: '2.5 km' },
-      { name: 'Thermal Power Plant Hospital', distance: '3.0 km' },
-      { name: 'Harbour Express Toll', distance: '2.8 km' }
-    ],
-    layoutPlots: [
-      { number: 1, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹19.8 L' },
-      { number: 2, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Available', price: '₹19.8 L' },
-      { number: 3, size: '1500 sq.ft', cents: 3.44, facing: 'North', status: 'Available', price: '₹24.7 L' },
-      { number: 4, size: '1800 sq.ft', cents: 4.13, facing: 'North-East', status: 'Available', price: '₹29.7 L' },
-      { number: 5, size: '1200 sq.ft', cents: 2.75, facing: 'South', status: 'Sold', price: '₹19.0 L' }
-    ]
-  },
-  {
     id: 'project-4',
     slug: 'ap-rajan-garden-tharuvaikulam',
     name: 'AP Rajan Garden',
-    tagline: 'Premium Plots & House Construction — Walking Distance to Beach',
+    tagline: 'Premium Plots & Turnkey House Construction — Walking Distance to Beach',
     location: 'Tharuvaikulam, Thoothukudi',
     address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi 628105',
     totalPlots: 56,
@@ -488,39 +665,64 @@ export const INITIAL_PROJECTS: Project[] = [
       '/images/ap-rajan-garden-layout.jpg',
       '/images/plot-house-construction.jpg',
       '/images/completed-model-villa.jpg',
-      '/images/real_estate.png'
+      '/images/real_estate.png',
+      '/images/product.png'
     ],
     highlights: [
-      'Walking Distance to the Beach',
+      'Walking Distance to the Beach (350 meters)',
       'Plot + Turnkey House Construction Facility',
-      'Up to 90% Loan Financing Support',
-      'Thoothukudi–Rameswaram ECR Belt'
+      'Up to 90% Composite Bank Loan Financing Support',
+      'Thoothukudi–Rameswaram ECR Belt with 24-Hour Bus Service',
+      'Gated Community with 24-Hour Security & Grand Entrance Arch',
+      'Water Line Along All Roads & Individual Plot Water Tank Facility',
+      'Near Reported 53-Acre Tourism Development Area & Coastal Resorts'
     ],
     houseConstructionAvailable: true,
-    loanFinancingOffer: 'Up to 90% Loan Financing Available for Plot + House Construction (Subject to Bank Eligibility)',
-    beachDistance: "Few Minutes' Walk to the Beach",
+    loanFinancingOffer: 'Up to 90% Composite Loan Financing Available for Plot + House Construction (Subject to Bank Eligibility)',
+    beachDistance: 'Few Minutes\' Walk to the Beach (350 meters)',
     amenities: [
-      'Walking Distance to the Beach',
-      'Gated Community with Grand Entrance',
-      '24-Hour Security Service',
-      'Garden Maintenance & Tree Plantation',
-      'Water Line Available Along Layout Roads',
-      'Individual Plot Water Tank Construction',
+      'Walking Distance to Tharuvaikulam Beach (350m)',
+      'Gated Community with Grand Entrance Arch',
+      '24-Hour Security & CCTV Surveillance',
+      'Garden Maintenance & Avenue Tree Plantation',
+      'Water Line Available Along All Layout Roads',
+      'Individual Plot Water Tank Construction Facility',
       'Close to Thoothukudi–Rameswaram Main Road (ECR)',
-      '24-Hour Frequent Bus Service in Area',
+      '24-Hour Frequent Bus Service in Immediate Area',
       'Plot + House Construction Facility (Basic, Premium & Luxury)',
-      'Customized House Planning to Completion Support',
-      'Up to 90% Bank Loan Financing Guidance',
-      'Near Reported 53-Acre Tourism Development Area'
+      'Customized Architectural Planning to Handover Support',
+      'Up to 90% Bank Loan Financing Guidance (SBI, Canara, HDFC)',
+      'Near Reported 53-Acre Tourism Development Area & Coastal Resorts'
     ],
     landmarks: [
-      { name: 'Tharuvaikulam Beach Shoreline', distance: '350 m (Walking Distance)' },
-      { name: 'Thoothukudi–Rameswaram Main Road (ECR)', distance: '0.5 km (2 mins)' },
-      { name: 'Reported 53-Acre Tourism Development Area', distance: '1.2 km (3 mins)' },
-      { name: 'St. Michael Church & Ancient Temples', distance: '0.8 km (2 mins)' },
-      { name: 'Nearby Coastal Resorts & Restaurants', distance: '0.6 km (2 mins)' },
-      { name: 'Thoothukudi New Bus Stand & City Center', distance: '11.5 km (15 mins)' },
-      { name: 'VOC Port Terminal & Industrial Corridor', distance: '16 km (20 mins)' }
+      {
+        name: 'Tharuvaikulam Beach Shoreline',
+        distance: '350 m (Walking Distance)'
+      },
+      {
+        name: 'Thoothukudi–Rameswaram Main Road (ECR)',
+        distance: '0.5 km (2 mins)'
+      },
+      {
+        name: 'Reported 53-Acre Tourism Development Area',
+        distance: '1.2 km (3 mins)'
+      },
+      {
+        name: 'St. Michael Church & Ancient Temples',
+        distance: '0.8 km (2 mins)'
+      },
+      {
+        name: 'Nearby Coastal Seafood Resorts & Restaurants',
+        distance: '0.6 km (2 mins)'
+      },
+      {
+        name: 'Thoothukudi New Bus Stand & City Center',
+        distance: '11.5 km (15 mins)'
+      },
+      {
+        name: 'VOC Port Terminal & Industrial Corridor',
+        distance: '16 km (20 mins)'
+      }
     ],
     layoutPlots: [
       { number: 1, size: '1200 sq.ft', cents: 2.75, facing: 'East', status: 'Sold', price: '₹14.5 L' },
@@ -545,41 +747,41 @@ export const INITIAL_PROJECTS: Project[] = [
 export const INITIAL_ENQUIRIES: Enquiry[] = [
   {
     id: 'enq-1',
-    plotId: 'plot-1',
-    plotTitle: 'Pearl Haven - Premium Corner Villa Plot',
+    plotId: 'plot-ap-2',
+    plotTitle: 'AP Rajan Garden - Beachside Villa Plot + Construction #02',
     name: 'K. Balasubramanian',
     phone: '+91 94431 88210',
     email: 'bala.subbu@gmail.com',
-    message: 'Interested in Plot #18 in Pearl Haven. Would like to schedule an on-site physical inspection this Saturday morning.',
-    preferredLocation: 'Korampallam',
-    budget: '₹30 - ₹35 Lakhs',
+    message: 'Interested in Plot #02 at AP Rajan Garden with turnkey house construction option. Would like to schedule an on-site physical visit this Saturday.',
+    preferredLocation: 'Tharuvaikulam',
+    budget: '₹15 - ₹25 Lakhs',
     status: 'New',
-    createdAt: '2026-03-15'
+    createdAt: '2026-10-26'
   },
   {
     id: 'enq-2',
-    plotId: 'plot-2',
-    plotTitle: 'Palayam Greens - Four-Lane Connected Residential Plot',
+    plotId: 'plot-ap-5',
+    plotTitle: 'AP Rajan Garden - Grand Beach Villa Plot #05',
     name: 'S. Rajendran',
     phone: '+91 98422 34109',
     email: 'rajendran.builders@yahoo.com',
-    message: 'Please share DTCP approval copy and survey layout map for Palayam Greens plot.',
-    preferredLocation: 'Palayamkottai Road',
-    budget: '₹20 - ₹25 Lakhs',
+    message: 'Please share DTCP approval certificate and turnkey luxury villa floor plan options for Plot #05 in AP Rajan Garden.',
+    preferredLocation: 'Tharuvaikulam',
+    budget: '₹25 - ₹35 Lakhs',
     status: 'Contacted',
-    createdAt: '2026-03-14'
+    createdAt: '2026-10-25'
   },
   {
     id: 'enq-3',
-    plotId: 'plot-3',
-    plotTitle: 'Harbour Enclave - East Facing Coastal City Plot',
+    plotId: 'plot-ap-3',
+    plotTitle: 'AP Rajan Garden - Prime North Facing Avenue Plot #03',
     name: 'M. Anand Kumar',
     phone: '+91 97914 55201',
     email: 'anand.maritime@gmail.com',
-    message: 'Looking for 2 adjacent plots near Harbour Bypass for joint family residential construction.',
-    preferredLocation: 'Harbour Bypass Road',
-    budget: '₹35 - ₹40 Lakhs',
+    message: 'Looking for beachside villa plots in AP Rajan Garden with 90% loan assistance for plot and construction.',
+    preferredLocation: 'Tharuvaikulam',
+    budget: '₹18 - ₹22 Lakhs',
     status: 'Follow-up',
-    createdAt: '2026-03-12'
+    createdAt: '2026-10-24'
   }
 ];

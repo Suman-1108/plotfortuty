@@ -8,8 +8,8 @@ export default function ContactCTA() {
     name: '',
     phone: '',
     email: '',
-    preferredLocation: 'Korampallam',
-    budget: '₹25L – ₹35L',
+    preferredLocation: 'Tharuvaikulam (AP Rajan Garden)',
+    budget: '₹15L – ₹25L',
     message: '',
   });
 
@@ -39,8 +39,8 @@ export default function ContactCTA() {
           name: '',
           phone: '',
           email: '',
-          preferredLocation: 'Korampallam',
-          budget: '₹25L – ₹35L',
+          preferredLocation: 'Tharuvaikulam (AP Rajan Garden)',
+          budget: '₹15L – ₹25L',
           message: '',
         });
       } else {
@@ -180,19 +180,17 @@ export default function ContactCTA() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-[#222222] mb-1">
-                      Preferred Location
+                      Preferred Layout / Category
                     </label>
                     <select
                       value={formData.preferredLocation}
                       onChange={(e) => setFormData({ ...formData, preferredLocation: e.target.value })}
                       className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-[#DADDD5] rounded-md focus:outline-none focus:border-[#668F35]"
                     >
-                      <option value="Korampallam">Korampallam (Collectorate)</option>
-                      <option value="Millerpuram">Millerpuram</option>
-                      <option value="Palayamkottai Road">Palayamkottai Road (NH 138)</option>
-                      <option value="Harbour Bypass Road">Harbour Bypass Road</option>
-                      <option value="Muthiapuram">Muthiapuram & Spic Nagar</option>
-                      <option value="Ettayapuram Road">Ettayapuram Road</option>
+                      <option value="Tharuvaikulam (AP Rajan Garden)">AP Rajan Garden (Beachside Villa Plot)</option>
+                      <option value="AP Rajan Garden - Plot + Construction">AP Rajan Garden (Plot + Turnkey Construction)</option>
+                      <option value="AP Rajan Garden - Grand Villa">AP Rajan Garden (Grand Villa Plot - 5.5 Cents)</option>
+                      <option value="AP Rajan Garden - 90% Loan Support">AP Rajan Garden (90% Loan Financing Support)</option>
                     </select>
                   </div>
 

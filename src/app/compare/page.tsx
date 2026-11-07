@@ -3,9 +3,9 @@ import { getPlots } from '@/lib/storage';
 import CompareClient from '@/components/compare/CompareClient';
 
 export const metadata: Metadata = {
-  title: 'Compare Residential Plots in Thoothukudi | Plot 4 Tuty',
+  title: 'Compare AP Rajan Garden Plots | Plot 4 Tuty',
   description:
-    'Compare Thoothukudi plots side-by-side by price per cent, road width, dimensions, facing, DTCP/TNRERA approval, and infrastructure.',
+    'Compare AP Rajan Garden plots side-by-side by price per cent, road width, dimensions, facing, beach distance, and turnkey construction options in Tharuvaikulam, Thoothukudi.',
 };
 
 export default async function ComparePage() {
@@ -15,13 +15,13 @@ export default async function ComparePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center max-w-2xl mx-auto">
           <span className="text-xs uppercase font-extrabold tracking-widest text-[#668F35] bg-[#E5ECD9] px-3.5 py-1 rounded-full border border-[#D0DFC0]">
-            Plot Comparison Tool
+            AP Rajan Garden &bull; Plot Comparison
           </span>
           <h1 className="text-2xl sm:text-4xl font-black text-[#1F271B] tracking-tight mt-3">
-            Compare Plots Side-by-Side
+            Compare AP Rajan Garden Plots Side-by-Side
           </h1>
           <p className="text-xs sm:text-sm text-[#556046] mt-2">
-            Evaluate plot dimensions, legal clearances, blacktop road width, and pricing per sq.ft to make an informed land investment in Thoothukudi.
+            Evaluate plot dimensions, DTCP legal clearance, 33ft road width, and pricing per sq.ft to select your ideal beachside villa plot in Tharuvaikulam.
           </p>
         </div>
 

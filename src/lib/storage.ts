@@ -47,13 +47,18 @@ export async function getPlots(): Promise<Plot[]> {
 }
 
 const SLUG_ALIASES: Record<string, string> = {
-  'pearl-haven-plot-18': 'pearl-haven-corner-villa-plot-korampallam',
-  'palayam-greens-corner-42': 'palayam-greenfield-residential-plot-nh138',
-  'harbour-enclave-villa-plot': 'harbour-view-enclave-east-facing-muthiapuram',
-  'millerpuram-central-avenue': 'millerpuram-central-luxury-plot',
-  'ap-rajan-garden': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
-  'ap-rajan-garden-plot': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
-  'ap-rajan-garden-beachside': 'ap-rajan-garden-beachside-villa-plot-tharuvaikulam',
+  'pearl-haven-plot-18': 'ap-rajan-garden-beachside-villa-plot-02',
+  'pearl-haven-corner-villa-plot-korampallam': 'ap-rajan-garden-beachside-villa-plot-02',
+  'palayam-greens-corner-42': 'ap-rajan-garden-beachside-villa-plot-02',
+  'palayam-greenfield-residential-plot-nh138': 'ap-rajan-garden-avenue-plot-03',
+  'harbour-enclave-villa-plot': 'ap-rajan-garden-beachside-villa-plot-02',
+  'harbour-view-enclave-east-facing-muthiapuram': 'ap-rajan-garden-beachside-villa-plot-02',
+  'millerpuram-central-avenue': 'ap-rajan-garden-grand-villa-plot-05',
+  'millerpuram-central-luxury-plot': 'ap-rajan-garden-grand-villa-plot-05',
+  'ap-rajan-garden': 'ap-rajan-garden-beachside-villa-plot-02',
+  'ap-rajan-garden-plot': 'ap-rajan-garden-beachside-villa-plot-02',
+  'ap-rajan-garden-beachside': 'ap-rajan-garden-beachside-villa-plot-02',
+  'ap-rajan-garden-beachside-villa-plot-tharuvaikulam': 'ap-rajan-garden-beachside-villa-plot-02',
 };
 
 export async function getPlotBySlug(slug: string): Promise<Plot | null> {

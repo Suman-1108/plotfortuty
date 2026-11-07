@@ -23,16 +23,16 @@ export default function NewPlotPage() {
 
   const [form, setForm] = useState({
     title: '',
-    project: 'Pearl Haven Layout',
-    location: 'Korampallam',
-    address: '',
+    project: 'AP Rajan Garden',
+    location: 'Tharuvaikulam',
+    address: 'Near Thoothukudi–Rameswaram ECR Main Road, Tharuvaikulam, Thoothukudi',
     price: '',
-    areaCents: '3.5',
-    areaSqFt: '1524',
-    dimensions: '30 ft x 50.8 ft',
-    facing: 'North-East',
-    roadWidth: '40 ft Wide Blacktop Tar Road',
-    approval: 'DTCP & RERA Approved',
+    areaCents: '2.75',
+    areaSqFt: '1200',
+    dimensions: '30 ft x 40 ft',
+    facing: 'East',
+    roadWidth: '33 ft Blacktop Tar Road',
+    approval: 'DTCP Approved & CRZ Cleared',
     approvalNumber: 'DTCP No. 128/2023',
     pattaStatus: 'Individual Clear Patta Ready',
     description: '',
@@ -173,7 +173,7 @@ export default function NewPlotPage() {
                   type="text"
                   required
                   name="project"
-                  placeholder="e.g. Pearl Haven Gated Community"
+                  placeholder="e.g. AP Rajan Garden"
                   value={form.project}
                   onChange={handleChange}
                   className="w-full p-2.5 rounded-xl border border-gray-300 focus:outline-none focus:border-[#668F35] font-medium"

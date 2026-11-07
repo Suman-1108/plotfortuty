@@ -34,50 +34,50 @@ export default function Footer() {
                   Plot 4 Tuty<span className="text-[#B7E436]">.</span>
                 </span>
                 <span className="text-[10px] font-bold text-[#8FA57C] tracking-widest uppercase mt-1">
-                  RESIDENTIAL LAND &amp; PLOT MARKETPLACE
+                  AP RAJAN GARDEN &bull; BEACHSIDE PLOTS &amp; HOMES
                 </span>
               </div>
             </Link>
 
             <p className="text-xs sm:text-sm text-[#A9BA99] leading-relaxed max-w-sm">
-              Thoothukudi&apos;s dedicated residential land marketplace. Connecting homebuyers directly with verified DTCP-approved layouts, individual patta plots, and gated villa communities across prime corridors.
+              Official portal for AP Rajan Garden in Tharuvaikulam, Thoothukudi. Offering DTCP-approved beachside residential villa plots and complete turnkey house construction (Basic, Premium &amp; Luxury) walking distance to the beach.
             </p>
 
             <div className="pt-2 flex items-center space-x-2 text-xs text-[#D8FF54]">
               <ShieldCheck className="w-4 h-4 text-[#B7E436]" />
-              <span>100% Verified Survey Sketches &amp; Clear Titles</span>
+              <span>DTCP Approved &bull; CRZ Cleared &bull; 90% Bank Loan Support</span>
             </div>
           </div>
 
-          {/* Col 1: Explore Corridors */}
+          {/* Col 1: Project Highlights */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-white tracking-widest uppercase">
-              Prime Corridors
+              Project Highlights
             </h4>
             <ul className="space-y-2 text-xs text-[#A9BA99]">
               <li>
-                <Link href="/plots?location=Korampallam" className="hover:text-[#B7E436] transition-colors">
-                  Korampallam Collectorate
+                <Link href="/plots" className="hover:text-[#B7E436] transition-colors">
+                  Walk to Beach (350 meters)
                 </Link>
               </li>
               <li>
-                <Link href="/plots?location=Palayamkottai+Road" className="hover:text-[#B7E436] transition-colors">
-                  Palayamkottai Road (NH 138)
+                <Link href="/projects" className="hover:text-[#B7E436] transition-colors">
+                  Turnkey House Construction
                 </Link>
               </li>
               <li>
-                <Link href="/plots?location=Harbour+Bypass+Road" className="hover:text-[#B7E436] transition-colors">
-                  Harbour Bypass Road
+                <Link href="/projects" className="hover:text-[#B7E436] transition-colors">
+                  Up to 90% Bank Loan Assistance
                 </Link>
               </li>
               <li>
-                <Link href="/plots?location=Millerpuram" className="hover:text-[#B7E436] transition-colors">
-                  Millerpuram Central
+                <Link href="/locations" className="hover:text-[#B7E436] transition-colors">
+                  Tharuvaikulam (ECR Road)
                 </Link>
               </li>
               <li>
-                <Link href="/locations" className="text-[#B7E436] hover:underline flex items-center gap-1 font-semibold">
-                  All 6 Corridors <ArrowUpRight className="w-3 h-3" />
+                <Link href="/projects" className="text-[#B7E436] hover:underline flex items-center gap-1 font-semibold">
+                  View Full Layout Site Plan <ArrowUpRight className="w-3 h-3" />
                 </Link>
               </li>
             </ul>
@@ -91,12 +91,12 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-[#A9BA99]">
               <li>
                 <Link href="/plots" className="hover:text-[#B7E436] transition-colors">
-                  Search All Plots
+                  Search Available Plots
                 </Link>
               </li>
               <li>
                 <Link href="/projects" className="hover:text-[#B7E436] transition-colors">
-                  Gated Township Projects
+                  AP Rajan Garden Township
                 </Link>
               </li>
               <li>
@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/locations" className="hover:text-[#B7E436] transition-colors">
-                  Thoothukudi Location Map
+                  Tharuvaikulam Location Map
                 </Link>
               </li>
               <li>
@@ -125,11 +125,11 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-[#A9BA99]">
               <li className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#B7E436]" />
-                <span>DTCP Layout Approval</span>
+                <span>DTCP Approval No. 112/2024</span>
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#B7E436]" />
-                <span>TNRERA Registered</span>
+                <span>Coastal CRZ Cleared</span>
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#B7E436]" />
@@ -137,11 +137,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#B7E436]" />
-                <span>SBI &amp; HDFC Pre-Approved</span>
+                <span>90% Composite Loan Support</span>
               </li>
               <li className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#B7E436]" />
-                <span>Zero Encumbrance</span>
+                <span>Water Line Along All Roads</span>
               </li>
             </ul>
           </div>

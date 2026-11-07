@@ -29,9 +29,9 @@ export default function PropertySuggestions() {
                 }}
                 className="appearance-none bg-white border border-[#DADDD5] hover:border-[#668F35] text-[#222222] text-xs sm:text-sm font-semibold rounded-full px-5 py-3 pr-10 shadow-xs focus:outline-none cursor-pointer transition-colors"
               >
-                <option value="new">Newly Released DTCP Plots</option>
-                <option value="ready">Ready for Immediate Construction</option>
-                <option value="gated">Gated Layout Townships</option>
+                <option value="new">Beachside Villa Plots (Walk to Beach)</option>
+                <option value="ready">Plot + Turnkey House Construction</option>
+                <option value="gated">Gated Layout with 33ft Roads</option>
               </select>
               <ChevronDown className="w-4 h-4 text-gray-500 absolute right-4 pointer-events-none" />
             </div>
@@ -42,13 +42,13 @@ export default function PropertySuggestions() {
                 value={filter2}
                 onChange={(e) => {
                   setFilter2(e.target.value);
-                  router.push(`/plots?minPrice=1500000&maxPrice=3500000`);
+                  router.push(`/plots`);
                 }}
                 className="appearance-none bg-white border border-[#DADDD5] hover:border-[#668F35] text-[#222222] text-xs sm:text-sm font-semibold rounded-full px-5 py-3 pr-10 shadow-xs focus:outline-none cursor-pointer transition-colors"
               >
-                <option value="investment">High Appreciation Opportunities</option>
-                <option value="budget">Budget Plots Under ₹25 Lakhs</option>
-                <option value="highway">NH 138 &amp; Harbour Frontage</option>
+                <option value="investment">Composite 90% Loan Approved</option>
+                <option value="budget">Starter Plots Under ₹15 Lakhs</option>
+                <option value="highway">ECR Corridor &bull; Tourism Zone</option>
               </select>
               <ChevronDown className="w-4 h-4 text-gray-500 absolute right-4 pointer-events-none" />
             </div>

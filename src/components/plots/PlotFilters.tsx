@@ -60,22 +60,16 @@ export default function PlotFilters({ filters, onChange, onReset, totalCount }: 
 
       {/* Filter Selects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-2">
-        {/* Location */}
+        {/* Location / Layout */}
         <div>
-          <label className="block text-xs font-semibold text-[#666A5D] mb-1">Location</label>
+          <label className="block text-xs font-semibold text-[#666A5D] mb-1">Project / Location</label>
           <select
             value={filters.location}
             onChange={(e) => handleChange('location', e.target.value)}
             className="w-full text-xs font-medium bg-[#F4F5F0] border border-[#DADDD5] rounded-md p-2 focus:outline-none focus:border-[#668F35]"
           >
-            <option value="all">All Locations</option>
-            <option value="Korampallam">Korampallam</option>
-            <option value="Millerpuram">Millerpuram</option>
-            <option value="Palayamkottai Road">Palayamkottai Road</option>
-            <option value="Harbour Bypass Road">Harbour Bypass Road</option>
-            <option value="Muthiapuram">Muthiapuram</option>
-            <option value="Spic Nagar">Spic Nagar</option>
-            <option value="Ettayapuram Road">Ettayapuram Road</option>
+            <option value="all">All AP Rajan Garden Plots</option>
+            <option value="Tharuvaikulam">Tharuvaikulam (Beachside &amp; ECR)</option>
           </select>
         </div>
 

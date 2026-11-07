@@ -4,9 +4,9 @@ import ProjectsClient from '@/components/projects/ProjectsClient';
 import APRajanGardenCard from '@/components/home/APRajanGardenCard';
 
 export const metadata: Metadata = {
-  title: 'Masterplan Layout Projects in Thoothukudi | Plot 4 Tuty',
+  title: 'AP Rajan Garden Layout Masterplan | Plot 4 Tuty',
   description:
-    'Explore signature residential plotted communities in Thoothukudi, Tamil Nadu. AP Rajan Garden, Pearl Haven, Palayam Greens, and Harbour Enclave with DTCP and TNRERA approvals, wide roads, and sweet groundwater.',
+    'Explore AP Rajan Garden residential plotted community in Tharuvaikulam, Thoothukudi, Tamil Nadu. Walking distance to the beach, DTCP approved layout with 33ft roads, turnkey house construction, and up to 90% loan financing.',
 };
 
 export default async function ProjectsPage() {

@@ -70,7 +70,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-6">
             <span className="flex items-center space-x-1.5 text-gray-300">
               <span className="inline-block w-2 h-2 rounded-full bg-[#B7E436]"></span>
-              <span>100% DTCP Approved &amp; TNRERA Verified Plots in Thoothukudi, Tamil Nadu</span>
+              <span>AP Rajan Garden &bull; DTCP Approved Beachside Plots &amp; Turnkey House Construction in Tharuvaikulam</span>
             </span>
             <span className="text-gray-500">|</span>
             <span className="text-gray-300 flex items-center space-x-1">
@@ -137,7 +137,7 @@ export default function Navbar() {
                 Plot 4 Tuty<span className="text-[#668F35]">.</span>
               </span>
               <span className="text-[9px] sm:text-[10px] font-bold text-[#666A5D] tracking-wider uppercase mt-1">
-                RESIDENTIAL LAND &amp; PLOT MARKETPLACE
+                AP RAJAN GARDEN &bull; BEACHSIDE PLOTS &amp; HOMES
               </span>
             </div>
           </Link>

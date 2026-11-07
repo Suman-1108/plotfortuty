@@ -10,52 +10,52 @@ export default function StatsBanner() {
             {/* Stat 1 */}
             <div className="border-b md:border-b-0 md:border-r border-[#D5E3C3] pb-4 md:pb-0 pr-4">
               <div className="text-3xl sm:text-4xl font-extrabold text-[#1F271B] tracking-tight">
-                450<span className="text-[#668F35]">+</span>
+                56<span className="text-[#668F35]"> Plots</span>
               </div>
               <div className="text-xs sm:text-sm font-semibold text-[#556046] mt-1">
-                Verified Plots Registered
+                AP Rajan Garden Layout
               </div>
               <div className="text-[11px] text-[#7A8668] mt-0.5">
-                Across Thoothukudi Corridors
+                22 Available &bull; 800 to 2,400 sq.ft
               </div>
             </div>
 
             {/* Stat 2 */}
             <div className="border-b lg:border-b-0 lg:border-r border-[#D5E3C3] pb-4 lg:pb-0 pr-4">
               <div className="text-3xl sm:text-4xl font-extrabold text-[#1F271B] tracking-tight">
-                8.5<span className="text-[#668F35]">+</span> Lakhs sq.ft
+                350<span className="text-[#668F35]"> m</span>
               </div>
               <div className="text-xs sm:text-sm font-semibold text-[#556046] mt-1">
-                Masterplanned Layout Area
+                Walking Distance to Beach
               </div>
               <div className="text-[11px] text-[#7A8668] mt-0.5">
-                With 30ft &amp; 40ft Blacktop Tar Roads
+                Tharuvaikulam Coastal Breeze Zone
               </div>
             </div>
 
             {/* Stat 3 */}
             <div className="border-b md:border-b-0 md:border-r border-[#D5E3C3] pb-4 md:pb-0 pr-4">
               <div className="text-3xl sm:text-4xl font-extrabold text-[#1F271B] tracking-tight">
-                100<span className="text-[#668F35]">%</span>
+                90<span className="text-[#668F35]">%</span>
               </div>
               <div className="text-xs sm:text-sm font-semibold text-[#556046] mt-1">
-                DTCP &amp; TNRERA Clear Titles
+                Bank Loan Financing
               </div>
               <div className="text-[11px] text-[#7A8668] mt-0.5">
-                Bank Loan Approval from SBI &amp; HDFC
+                Plot + Turnkey House Construction
               </div>
             </div>
 
-            {/* Right Callout Box (Exact match to reference: "Crie seu anúncio...") */}
+            {/* Right Callout Box */}
             <div className="bg-[#DFECCB] rounded-2xl p-4 sm:p-5 border border-[#CEE0B4] flex flex-col justify-between">
               <p className="text-xs sm:text-sm text-[#26311F] leading-snug font-medium">
-                Direct developer pricing with instant legal verification and on-site physical inspection.
+                DTCP approved plots &amp; customized villa building from plan to key handover.
               </p>
               <Link
-                href="/contact"
+                href="/projects"
                 className="mt-3 inline-flex items-center space-x-1.5 text-xs font-bold text-[#1F271B] underline hover:text-[#4F7327] transition-colors"
               >
-                <span>Schedule a Site Visit Now</span>
+                <span>Explore AP Rajan Garden Layout</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>

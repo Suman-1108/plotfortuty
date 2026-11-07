@@ -1,28 +1,28 @@
 [
   {
     "id": "enq-1",
-    "plotId": "plot-1",
-    "plotTitle": "Pearl Haven - Premium Corner Villa Plot",
+    "plotId": "plot-ap-2",
+    "plotTitle": "AP Rajan Garden - Beachside Villa Plot + Construction #02",
     "name": "K. Balasubramanian",
     "phone": "+91 98421 55678",
     "email": "bala.tuticorin@gmail.com",
-    "message": "Interested in Plot #18 in Pearl Haven. Would like to schedule an on-site visit this Saturday.",
-    "preferredLocation": "Korampallam",
-    "budget": "₹30L - ₹35L",
+    "message": "Interested in Plot #02 at AP Rajan Garden with turnkey house construction option. Would like to schedule an on-site physical visit this Saturday.",
+    "preferredLocation": "Tharuvaikulam",
+    "budget": "₹15 - ₹25 Lakhs",
     "status": "New",
-    "createdAt": "2026-03-14T10:30:00Z"
+    "createdAt": "2026-10-26T10:30:00Z"
   },
   {
     "id": "enq-2",
-    "plotId": "plot-2",
-    "plotTitle": "Palayam Greens - Four-Lane Connected Residential Plot",
+    "plotId": "plot-ap-5",
+    "plotTitle": "AP Rajan Garden - Grand Beach Villa Plot #05",
     "name": "S. Rajendran",
     "phone": "+91 94432 89012",
     "email": "rajendran.tn@outlook.com",
-    "message": "Please share DTCP approval copy and survey layout map for Palayam Greens plot.",
-    "preferredLocation": "Palayamkottai Road",
-    "budget": "₹25L",
+    "message": "Please share DTCP approval copy and turnkey luxury villa floor plan options for Plot #05 in AP Rajan Garden.",
+    "preferredLocation": "Tharuvaikulam",
+    "budget": "₹25 - ₹35 Lakhs",
     "status": "Contacted",
-    "createdAt": "2026-03-13T14:15:00Z"
+    "createdAt": "2026-10-25T14:15:00Z"
   }
 ]

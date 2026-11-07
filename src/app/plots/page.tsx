@@ -4,9 +4,9 @@ import { getPlots } from '@/lib/storage';
 import PlotsClient from '@/components/plots/PlotsClient';
 
 export const metadata: Metadata = {
-  title: 'Explore Residential Plots in Thoothukudi | PLOT 4 TUTY',
+  title: 'AP Rajan Garden Residential Plots | PLOT 4 TUTY',
   description:
-    'Browse verified residential plots for sale in Thoothukudi, Tamil Nadu. Filter by location (Korampallam, Millerpuram, Palayamkottai Road), budget, area in cents, and DTCP approval.',
+    'Browse verified residential plots for sale at AP Rajan Garden in Tharuvaikulam, Thoothukudi, Tamil Nadu. Walking distance to beach, DTCP approved, turnkey house construction packages, and up to 90% bank loan financing.',
 };
 
 export default async function PlotsPage() {

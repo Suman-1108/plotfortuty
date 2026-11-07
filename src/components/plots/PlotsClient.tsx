@@ -101,13 +101,13 @@ export default function PlotsClient({ initialPlots }: PlotsClientProps) {
         <div className="mb-8">
           <div className="inline-flex items-center space-x-1.5 text-xs font-semibold uppercase tracking-wider text-[#668F35] mb-1.5">
             <Layers className="w-3.5 h-3.5" />
-            <span>Thoothukudi Real Estate Listings</span>
+            <span>AP Rajan Garden &bull; Tharuvaikulam, Thoothukudi</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-[#222222]">
-            Explore Residential Plots in Thoothukudi
+            AP Rajan Garden Residential Plots
           </h1>
           <p className="text-sm sm:text-base text-[#666A5D] mt-1 max-w-2xl">
-            Compare locations across Korampallam, Millerpuram, Palayamkottai Road & Harbour Bypass. 100% verified DTCP approvals, clear titles, and immediate registration.
+            Explore verified beachside plots in AP Rajan Garden, Tharuvaikulam, Thoothukudi. Walking distance to the beach, turnkey house construction packages, 33ft blacktop roads, and up to 90% loan financing.
           </p>
         </div>
 

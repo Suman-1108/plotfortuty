@@ -42,7 +42,7 @@ const AUDIT_LOGS: AuditLog[] = [
     id: 'LOG-8811',
     adminUser: 'Suman (Super Admin)',
     action: 'Updated DTCP Verification Status to Verified',
-    target: 'Harbour Enclave Phase 2 (Plot #12-18)',
+    target: 'AP Rajan Garden Phase 1 (Plot #01-15)',
     timestamp: '2026-10-26 17:15',
     ipAddress: '106.198.112.44',
     status: 'Success'
@@ -102,7 +102,7 @@ const CORRIDOR_STATS = [
     demand: 'Very High'
   },
   {
-    name: 'Millerpuram Residential',
+    name: 'Tharuvaikulam Coastal Area',
     searches: '1,920 views',
     enquiries: 45,
     avgPrice: '₹2,650 / sq.ft',

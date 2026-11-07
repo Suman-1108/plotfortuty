@@ -53,39 +53,41 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
           </p>
         </div>
 
-        {/* Project Selector Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-          {projects.map((proj) => {
-            const isCurrent = proj.slug === activeProject.slug;
-            return (
-              <button
-                key={proj.id}
-                onClick={() => handleProjectSelect(proj)}
-                className={`p-4 rounded-xl border text-left transition-all flex flex-col justify-between ${
-                  isCurrent
-                    ? 'bg-white border-[#668F35] ring-2 ring-[#668F35]/30 shadow-md'
-                    : 'bg-white/80 border-[#DADDD5] hover:border-[#668F35]'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span className="text-xs font-bold text-[#668F35]">{proj.location.split(',')[0]}</span>
-                    <span className="text-[11px] px-2 py-0.5 rounded bg-[#EDF3E4] text-[#53752A] font-semibold">
-                      {proj.availablePlots} Available
-                    </span>
+        {/* Project Selector Tabs - Only displayed if multiple projects exist */}
+        {projects.length > 1 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            {projects.map((proj) => {
+              const isCurrent = proj.slug === activeProject.slug;
+              return (
+                <button
+                  key={proj.id}
+                  onClick={() => handleProjectSelect(proj)}
+                  className={`p-4 rounded-xl border text-left transition-all flex flex-col justify-between ${
+                    isCurrent
+                      ? 'bg-white border-[#668F35] ring-2 ring-[#668F35]/30 shadow-md'
+                      : 'bg-white/80 border-[#DADDD5] hover:border-[#668F35]'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-xs font-bold text-[#668F35]">{proj.location.split(',')[0]}</span>
+                      <span className="text-[11px] px-2 py-0.5 rounded bg-[#EDF3E4] text-[#53752A] font-semibold">
+                        {proj.availablePlots} Available
+                      </span>
+                    </div>
+                    <h3 className="text-base font-bold text-[#222222]">{proj.name}</h3>
+                    <p className="text-xs text-[#666A5D] mt-1 line-clamp-1">{proj.tagline}</p>
                   </div>
-                  <h3 className="text-base font-bold text-[#222222]">{proj.name}</h3>
-                  <p className="text-xs text-[#666A5D] mt-1 line-clamp-1">{proj.tagline}</p>
-                </div>
 
-                <div className="mt-3 pt-2 border-t border-[#DADDD5]/50 flex justify-between items-center text-xs text-[#222222]">
-                  <span className="font-semibold">{proj.priceRange}</span>
-                  <span className="text-[11px] text-[#668F35] font-medium">Inspect ↗</span>
-                </div>
-              </button>
-            );
-          })}
-        </div>
+                  <div className="mt-3 pt-2 border-t border-[#DADDD5]/50 flex justify-between items-center text-xs text-[#222222]">
+                    <span className="font-semibold">{proj.priceRange}</span>
+                    <span className="text-[11px] text-[#668F35] font-medium">Inspect ↗</span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         {/* Active Project Comprehensive Detail Section */}
         {activeProject && (

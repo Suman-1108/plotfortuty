@@ -77,11 +77,11 @@ export default function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B7E436]"></span>
             </span>
             <span className="tracking-widest uppercase text-[11px] font-bold text-white/95">
-              PLOT 4 TUTY
+              AP RAJAN GARDEN
             </span>
             <span className="hidden sm:inline-block text-white/30">|</span>
             <span className="hidden sm:inline-block text-[11px] text-[#D8FF54] font-medium">
-              Verified Residential Land Marketplace
+              Beachside Plots &amp; Turnkey House Construction
             </span>
           </div>
         </div>
@@ -91,11 +91,11 @@ export default function Hero() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#B7E436]/20 border border-[#B7E436]/40 text-[#D8FF54] text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Actual Land Surveys • 40ft Tar Roads • Clear Individual Patta</span>
+            <span>Walk to Beach • Turnkey House Construction • Up to 90% Loan Financing</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] drop-shadow-xl">
-            Find Your Perfect Plot in{' '}
+            AP Rajan Garden in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F4F5F0] to-[#D8FF54]">
               Thoothukudi
             </span>
@@ -103,7 +103,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-3 text-xs sm:text-sm md:text-base text-gray-200/90 max-w-2xl leading-relaxed drop-shadow-sm font-normal">
-            Browse verified residential land parcels, approved gated layout drawings, and direct seller listings with road dimensions, groundwater depth, and instant legal documentation.
+            Walking distance to the beach in Tharuvaikulam along the Thoothukudi–Rameswaram ECR Road. DTCP Approved gated layout with 33ft blacktop tar roads, sweet water lines, individual water tank construction, and customized house construction from planning to handover.
           </p>
 
           {/* 3 Prominent Quick Action Buttons */}
@@ -151,14 +151,8 @@ export default function Hero() {
                     onChange={(e) => setCorridor(e.target.value)}
                     className="w-full bg-transparent text-xs sm:text-sm font-bold text-[#1F271B] focus:outline-none cursor-pointer truncate"
                   >
-                    <option value="all">All Localities</option>
-                    <option value="Korampallam">Korampallam (Collectorate)</option>
-                    <option value="Harbour Bypass Road">Harbour Bypass Road</option>
-                    <option value="Palayamkottai Road">Palayamkottai Rd (NH 138)</option>
-                    <option value="Millerpuram">Millerpuram (City Center)</option>
-                    <option value="Muthiapuram">Muthiapuram &amp; Port Zone</option>
-                    <option value="Ettayapuram Road">Ettayapuram Road</option>
-                    <option value="Tharuvaikulam">Tharuvaikulam (Beach &amp; ECR)</option>
+                    <option value="all">All AP Rajan Garden Plots</option>
+                    <option value="Tharuvaikulam">Tharuvaikulam (Beachside &amp; ECR)</option>
                   </select>
                 </div>
               </div>
@@ -254,42 +248,35 @@ export default function Hero() {
           {/* Quick Filter Tags Row */}
           <div className="mt-3.5 flex flex-wrap items-center gap-2 text-xs text-white/90">
             <span className="text-[11px] text-gray-300 font-semibold flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-[#B7E436]" /> Trending Localities:
+              <Sparkles className="w-3 h-3 text-[#B7E436]" /> AP Rajan Garden Highlights:
             </span>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('Korampallam')}
-              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
-            >
-              Korampallam Collectorate
-            </button>
             <button
               type="button"
               onClick={() => handleQuickTag('Tharuvaikulam')}
               className="px-3 py-1 rounded-full bg-[#B7E436]/20 hover:bg-[#B7E436]/35 border border-[#B7E436]/50 text-[11px] text-[#D8FF54] font-bold transition-colors cursor-pointer"
             >
-              AP Rajan Garden (Beachside)
+              🌊 Walk to Beach (350m)
             </button>
             <button
               type="button"
-              onClick={() => handleQuickTag('Harbour Bypass Road')}
+              onClick={() => handleQuickTag('under-15', 'budget')}
               className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
             >
-              Harbour Enclave Phase 1
-            </button>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('Palayamkottai Road')}
-              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
-            >
-              Palayamkottai Road (NH 138)
+              Plots from ₹9.8L - ₹14.5L
             </button>
             <button
               type="button"
               onClick={() => handleQuickTag('15-25', 'budget')}
               className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-[#B7E436]/40 text-[11px] text-[#D8FF54] font-medium transition-colors cursor-pointer"
             >
-              Plots Under ₹25L
+              Villa Plots (₹15L - ₹25L)
+            </button>
+            <button
+              type="button"
+              onClick={() => handleQuickTag('above-35', 'budget')}
+              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
+            >
+              Turnkey House Construction
             </button>
           </div>
         </div>
