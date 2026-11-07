@@ -38,15 +38,6 @@ export default function Hero() {
     router.push(params.toString() ? `/plots?${params.toString()}` : '/plots');
   };
 
-  const handleQuickTag = (tag: string, type: 'location' | 'budget' = 'location') => {
-    if (type === 'budget') {
-      router.push(`/plots?budgetRange=${encodeURIComponent(tag)}`);
-    } else {
-      setCorridor(tag);
-      router.push(`/plots?location=${encodeURIComponent(tag)}`);
-    }
-  };
-
   return (
     <section
       suppressHydrationWarning
@@ -244,41 +235,6 @@ export default function Hero() {
               </button>
             </div>
           </form>
-
-          {/* Quick Filter Tags Row */}
-          <div className="mt-3.5 flex flex-wrap items-center gap-2 text-xs text-white/90">
-            <span className="text-[11px] text-gray-300 font-semibold flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-[#B7E436]" /> AP Rajan Garden Highlights:
-            </span>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('Tharuvaikulam')}
-              className="px-3 py-1 rounded-full bg-[#B7E436]/20 hover:bg-[#B7E436]/35 border border-[#B7E436]/50 text-[11px] text-[#D8FF54] font-bold transition-colors cursor-pointer"
-            >
-              🌊 Walk to Beach (350m)
-            </button>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('under-15', 'budget')}
-              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
-            >
-              Plots from ₹9.8L - ₹14.5L
-            </button>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('15-25', 'budget')}
-              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-[#B7E436]/40 text-[11px] text-[#D8FF54] font-medium transition-colors cursor-pointer"
-            >
-              Villa Plots (₹15L - ₹25L)
-            </button>
-            <button
-              type="button"
-              onClick={() => handleQuickTag('above-35', 'budget')}
-              className="px-3 py-1 rounded-full bg-black/45 hover:bg-black/70 border border-white/20 text-[11px] text-white font-medium transition-colors cursor-pointer"
-            >
-              Turnkey House Construction
-            </button>
-          </div>
         </div>
 
         {/* Bottom Trust & Feature Highlights Strip */}
