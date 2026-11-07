@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { MapPin, Compass, ShieldCheck, ArrowRight, MessageSquare, Maximize2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { MapPin, Compass, ShieldCheck, ArrowRight, MessageSquare } from 'lucide-react';
 import { Plot } from '@/lib/types';
 
 interface PlotCardProps {
@@ -10,14 +10,29 @@ interface PlotCardProps {
 }
 
 export default function PlotCard({ plot }: PlotCardProps) {
-  const whatsappUrl = `https://wa.me/919842155678?text=${encodeURIComponent(
-    `Hello Plot 4 Tuty, I am interested in: ${plot.title} (${plot.layoutPlotNumber}) located at ${plot.location}. Please share complete layout plan and price breakdown.`
+  const router = useRouter();
+
+  const whatsappUrl = `https://wa.me/919443152633?text=${encodeURIComponent(
+    `Hello Plot 4 Tuty, I am interested in: ${plot.title} (${plot.layoutPlotNumber}) located at ${plot.location}. Price: ${plot.priceDisplay}. Please share complete layout plan and title deeds.`
   )}`;
 
+  const handleCardClick = (e: React.MouseEvent) => {
+    // If the click happened on the WhatsApp button or any link, allow its default action
+    const target = e.target as HTMLElement;
+    if (target.closest('a[href^="https://wa.me"]')) {
+      return;
+    }
+    router.push(`/plots/${plot.slug}`);
+  };
+
   return (
-    <div className="group bg-white rounded-lg border border-[#DADDD5] overflow-hidden editorial-shadow hover:shadow-md transition-all duration-300 flex flex-col h-full">
+    <div
+      onClick={handleCardClick}
+      className="group bg-white rounded-2xl border border-[#DADDD5] overflow-hidden editorial-shadow hover:shadow-xl hover:border-[#668F35] hover:-translate-y-1 active:scale-[0.99] transition-all duration-300 flex flex-col h-full cursor-pointer select-none"
+      title={`Click anywhere to view full details for ${plot.title}`}
+    >
       {/* Property Image Container */}
-      <div className="relative aspect-land w-full bg-[#EAECE4] overflow-hidden">
+      <div className="relative aspect-land w-full bg-[#EAECE4] overflow-hidden pointer-events-none">
         <Image
           src={plot.images[0] || '/images/real_estate.png'}
           alt={plot.title}
@@ -27,14 +42,14 @@ export default function PlotCard({ plot }: PlotCardProps) {
         />
 
         {/* Top Badges */}
-        <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
-          <span className="inline-flex items-center space-x-1 px-2.5 py-1 text-xs font-semibold bg-white/95 backdrop-blur-sm text-[#222222] rounded border border-[#DADDD5] shadow-xs">
+        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+          <span className="inline-flex items-center space-x-1 px-2.5 py-1 text-xs font-semibold bg-white/95 backdrop-blur-sm text-[#222222] rounded-full border border-[#DADDD5] shadow-xs">
             <ShieldCheck className="w-3.5 h-3.5 text-[#668F35]" />
             <span>{plot.approval}</span>
           </span>
 
           <span
-            className={`px-2.5 py-1 text-xs font-semibold rounded shadow-xs uppercase tracking-wider ${
+            className={`px-2.5 py-1 text-xs font-bold rounded-full shadow-xs uppercase tracking-wider ${
               plot.status === 'Available'
                 ? 'bg-[#668F35] text-white'
                 : plot.status === 'Fast Selling'
@@ -49,7 +64,7 @@ export default function PlotCard({ plot }: PlotCardProps) {
         </div>
 
         {/* Plot Number Pill */}
-        <div className="absolute bottom-3 left-3 bg-[#222222]/90 backdrop-blur-sm text-white text-xs px-2.5 py-1 rounded font-medium">
+        <div className="absolute bottom-3 left-3 bg-[#1F271B]/90 backdrop-blur-sm text-white text-xs px-2.5 py-1 rounded-md font-medium">
           {plot.layoutPlotNumber} • {plot.project}
         </div>
       </div>
@@ -65,25 +80,23 @@ export default function PlotCard({ plot }: PlotCardProps) {
           </div>
 
           {/* Title */}
-          <Link href={`/plots/${plot.slug}`} className="block">
-            <h3 className="text-base sm:text-lg font-semibold text-[#222222] group-hover:text-[#668F35] transition-colors line-clamp-1 mb-2">
-              {plot.title}
-            </h3>
-          </Link>
+          <h3 className="text-base sm:text-lg font-extrabold text-[#222222] group-hover:text-[#668F35] transition-colors line-clamp-1 mb-2">
+            {plot.title}
+          </h3>
 
           {/* Key Metric Pills */}
-          <div className="grid grid-cols-2 gap-2 py-3 border-y border-[#DADDD5]/80 text-xs text-[#55594D] my-3 bg-[#F4F5F0]/60 rounded p-2">
+          <div className="grid grid-cols-2 gap-2 py-3 border-y border-[#DADDD5]/80 text-xs text-[#55594D] my-3 bg-[#F4F5F0]/60 rounded-xl p-2.5">
             <div>
               <span className="block text-[11px] text-[#666A5D]">Plot Area</span>
-              <span className="font-semibold text-[#222222]">
+              <span className="font-bold text-[#222222]">
                 {plot.areaCents} Cents <span className="font-normal text-gray-500">({plot.areaSqFt} sq.ft)</span>
               </span>
             </div>
             <div>
-              <span className="block text-[11px] text-[#666A5D]">Facing & Road</span>
-              <span className="font-semibold text-[#222222] flex items-center space-x-1">
+              <span className="block text-[11px] text-[#666A5D]">Facing &amp; Road</span>
+              <span className="font-bold text-[#222222] flex items-center space-x-1">
                 <Compass className="w-3 h-3 text-[#668F35]" />
-                <span>{plot.facing} • {plot.roadWidth.split(' ')[0]} ft</span>
+                <span>{plot.facing} • {plot.roadWidth?.split(' ')[0]} ft</span>
               </span>
             </div>
           </div>
@@ -93,12 +106,12 @@ export default function PlotCard({ plot }: PlotCardProps) {
         <div className="pt-2">
           <div className="flex items-baseline justify-between mb-3">
             <div>
-              <span className="text-[11px] uppercase tracking-wider text-[#666A5D] block">Price</span>
-              <span className="text-xl font-bold text-[#222222]">{plot.priceDisplay}</span>
+              <span className="text-[11px] uppercase tracking-wider text-[#666A5D] font-bold block">Price</span>
+              <span className="text-xl font-black text-[#1F271B]">{plot.priceDisplay}</span>
             </div>
             <div className="text-right">
-              <span className="text-xs text-[#666A5D]">₹{plot.pricePerSqFt} / sq.ft</span>
-              <span className="text-[11px] text-[#668F35] block font-medium">Clear Title</span>
+              <span className="text-xs font-semibold text-[#666A5D]">₹{plot.pricePerSqFt?.toLocaleString('en-IN')} / sq.ft</span>
+              <span className="text-[11px] text-[#668F35] block font-bold">Clear Title</span>
             </div>
           </div>
 
@@ -107,19 +120,17 @@ export default function PlotCard({ plot }: PlotCardProps) {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center space-x-1.5 py-2 px-3 text-xs font-semibold rounded bg-white text-[#222222] border border-[#DADDD5] hover:border-[#668F35] hover:bg-[#EDF3E4] transition-all"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center justify-center space-x-1.5 py-2.5 px-3 text-xs font-bold rounded-xl bg-white text-[#222222] border border-[#DADDD5] hover:border-[#668F35] hover:bg-[#EDF3E4] transition-all shadow-2xs z-10"
             >
               <MessageSquare className="w-3.5 h-3.5 text-[#668F35]" />
               <span>WhatsApp</span>
             </a>
 
-            <Link
-              href={`/plots/${plot.slug}`}
-              className="inline-flex items-center justify-center space-x-1 py-2 px-3 text-xs font-semibold rounded bg-[#222222] hover:bg-[#668F35] text-white transition-all"
-            >
+            <div className="inline-flex items-center justify-center space-x-1 py-2.5 px-3 text-xs font-bold rounded-xl bg-[#1F271B] group-hover:bg-[#668F35] text-white transition-all shadow-xs">
               <span>View Details</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            </div>
           </div>
         </div>
       </div>
