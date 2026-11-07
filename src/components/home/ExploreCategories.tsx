@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowRight, MapPin, ShieldCheck } from 'lucide-react';
 
 interface PlotItem {
@@ -62,6 +65,14 @@ const featuredListings: PlotItem[] = [
 ];
 
 export default function ExploreCategories() {
+  const router = useRouter();
+
+  const handleCardClick = (e: React.MouseEvent, slug: string) => {
+    // Navigate smoothly to plot details
+    e.preventDefault();
+    router.push(`/plots/${slug}`);
+  };
+
   return (
     <section className="px-3 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#F4F5F0]">
       <div className="max-w-7xl mx-auto">
@@ -84,17 +95,19 @@ export default function ExploreCategories() {
           </Link>
         </div>
 
-        {/* 4-card horizontal row - Each card is fully clickable to open plot details */}
+        {/* 4-card horizontal row - Clicking anywhere on any card opens plot details */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {featuredListings.map((plot) => (
             <Link
               key={plot.id}
               href={`/plots/${plot.slug}`}
-              className="bg-white rounded-2xl overflow-hidden border border-[#DADDD5] hover:border-[#668F35] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group cursor-pointer block"
+              onClick={(e) => handleCardClick(e, plot.slug)}
+              className="bg-white rounded-2xl overflow-hidden border border-[#DADDD5] hover:border-[#668F35] hover:shadow-2xl hover:-translate-y-1.5 active:scale-[0.99] transition-all duration-300 flex flex-col justify-between group cursor-pointer block select-none"
+              title={`Click to view full details for ${plot.title}`}
             >
               <div>
-                {/* Image Container with Top Badge */}
-                <div className="relative h-44 w-full overflow-hidden bg-gray-100">
+                {/* Image Container with Top Badges */}
+                <div className="relative h-44 w-full overflow-hidden bg-gray-100 pointer-events-none">
                   <Image
                     src={plot.image}
                     alt={plot.title}
@@ -110,8 +123,8 @@ export default function ExploreCategories() {
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-4 sm:p-5">
+                {/* Content Details */}
+                <div className="p-4 sm:p-5 pointer-events-none">
                   <div className="flex items-center space-x-1 text-xs text-gray-500 mb-1">
                     <MapPin className="w-3 h-3 text-[#668F35]" />
                     <span className="truncate">{plot.location}</span>
@@ -134,7 +147,7 @@ export default function ExploreCategories() {
               </div>
 
               {/* Bottom Price & Open Arrow Button */}
-              <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-3 border-t border-gray-100 flex items-center justify-between">
+              <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-3 border-t border-gray-100 flex items-center justify-between pointer-events-none">
                 <div>
                   <span className="block text-[10px] uppercase font-bold text-gray-400 tracking-wider">
                     Price
@@ -145,7 +158,7 @@ export default function ExploreCategories() {
                 </div>
 
                 <div
-                  className="w-9 h-9 rounded-full bg-[#F4F5F0] group-hover:bg-[#B7E436] text-[#222222] flex items-center justify-center transition-all duration-300 shadow-xs group-hover:translate-x-0.5"
+                  className="w-9 h-9 rounded-full bg-[#F4F5F0] group-hover:bg-[#B7E436] text-[#222222] flex items-center justify-center transition-all duration-300 shadow-xs group-hover:translate-x-1"
                   aria-label={`View details of ${plot.title}`}
                 >
                   <ArrowRight className="w-4 h-4" />
