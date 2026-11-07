@@ -10,7 +10,6 @@ import {
   Check,
   ShieldCheck,
   Layers,
-  Sparkles,
   ArrowRight,
   IndianRupee,
   Compass,
@@ -79,12 +78,6 @@ export default function Hero() {
 
         {/* Central Hero Body with Headline, Action Buttons & Search */}
         <div className="max-w-3xl my-auto py-4 sm:py-6">
-          {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#B7E436]/20 border border-[#B7E436]/40 text-[#D8FF54] text-xs font-semibold mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Walk to Beach • Turnkey House Construction • Up to 90% Loan Financing</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12] drop-shadow-xl">
             AP Rajan Garden in{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F4F5F0] to-[#D8FF54]">
