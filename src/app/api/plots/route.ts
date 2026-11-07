@@ -1,7 +1,8 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getPlots, savePlot } from '@/lib/storage';
+import { getSessionUser } from '@/lib/auth';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const location = searchParams.get('location');
@@ -9,12 +10,34 @@ export async function GET(request: Request) {
     const plotSize = searchParams.get('plotSize');
     const approval = searchParams.get('approval');
     const status = searchParams.get('status');
+    const layoutGroup = searchParams.get('layoutGroup');
+    const facing = searchParams.get('facing');
+    const projectId = searchParams.get('projectId');
     const query = searchParams.get('q')?.toLowerCase();
 
-    let plots = await getPlots();
+    // Check if requester has a tenant scope (e.g., developer portal)
+    const sessionUser = getSessionUser(request);
+    let tenantIdFilter = searchParams.get('tenantId') || undefined;
+
+    if (sessionUser && (sessionUser.role === 'developer' || sessionUser.role === 'seller')) {
+      // Strictly enforce developer's own tenant
+      tenantIdFilter = sessionUser.tenantId || 'tenant-sri-balaji-promoters';
+    }
+
+    let plots = await getPlots({
+      tenantId: tenantIdFilter,
+      projectId: projectId || undefined,
+      layoutGroup: layoutGroup || undefined,
+      status: status || undefined,
+      search: query || undefined
+    });
 
     if (location && location !== 'all') {
-      plots = plots.filter((p) => p.location.toLowerCase() === location.toLowerCase());
+      plots = plots.filter((p) => p.location.toLowerCase().includes(location.toLowerCase()));
+    }
+
+    if (facing && facing !== 'all') {
+      plots = plots.filter((p) => p.facing.toLowerCase().includes(facing.toLowerCase()));
     }
 
     if (budgetRange && budgetRange !== 'all') {
@@ -43,38 +66,43 @@ export async function GET(request: Request) {
       plots = plots.filter((p) => p.approval.toLowerCase().includes(approval.toLowerCase()));
     }
 
-    if (status && status !== 'all') {
-      plots = plots.filter((p) => p.status.toLowerCase() === status.toLowerCase());
-    }
-
-    if (query) {
-      plots = plots.filter(
-        (p) =>
-          p.title.toLowerCase().includes(query) ||
-          p.location.toLowerCase().includes(query) ||
-          p.project.toLowerCase().includes(query) ||
-          p.description.toLowerCase().includes(query)
-      );
-    }
-
-    return NextResponse.json({ success: true, count: plots.length, plots });
+    return NextResponse.json({
+      success: true,
+      count: plots.length,
+      totalScheduledEntries: plots.length,
+      plots
+    });
   } catch (error) {
     console.error('API Plots GET error:', error);
     return NextResponse.json({ success: false, error: 'Failed to fetch plots' }, { status: 500 });
   }
 }
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
+    const sessionUser = getSessionUser(request);
     const body = await request.json();
-    if (!body.title || !body.location || !body.price) {
-      return NextResponse.json({ success: false, error: 'Title, location, and price are required' }, { status: 400 });
+
+    if (!body.title || !body.price) {
+      return NextResponse.json(
+        { success: false, error: 'Title and price are required to list a plot' },
+        { status: 400 }
+      );
     }
 
-    const saved = await savePlot(body);
+    // Dynamic pricing formula validation: if cents & pricePerCent provided
+    if (body.areaCents && body.pricePerCent && !body.price) {
+      const cornerMultiplier = body.isCornerPlot ? 1.05 : 1.0;
+      body.price = Math.round(Number(body.areaCents) * Number(body.pricePerCent) * cornerMultiplier);
+    }
+
+    const tenantId = sessionUser?.tenantId || body.tenantId || 'tenant-sri-balaji-promoters';
+    const saved = await savePlot(body, tenantId);
+
     return NextResponse.json({ success: true, plot: saved }, { status: 201 });
-  } catch (error) {
-    console.error('API Plots POST error:', error);
-    return NextResponse.json({ success: false, error: 'Failed to save plot' }, { status: 500 });
+  } catch (error: unknown) {
+    const msg = error instanceof Error ? error.message : 'Failed to save plot';
+    console.error('API Plots POST error:', msg);
+    return NextResponse.json({ success: false, error: msg }, { status: 500 });
   }
 }

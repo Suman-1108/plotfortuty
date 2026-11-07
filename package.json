@@ -9,13 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "cloudinary": "^2.11.0",
+    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.57.0",
     "mongodb": "^7.7.0",
     "mongoose": "^9.11.4",
     "next": "16.4.1",
     "nodemailer": "^10.2.1",
+    "razorpay": "^2.9.8",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "resend": "^6.37.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

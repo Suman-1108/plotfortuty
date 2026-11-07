@@ -1,0 +1,42 @@
+[
+  {
+    "id": "tenant-sri-balaji-promoters",
+    "name": "Sri Balaji Promoters",
+    "slug": "sri-balaji-promoters",
+    "companyName": "Sri Balaji Real Estate & Promoters Pvt Ltd",
+    "email": "promoters@plotfortuty.com",
+    "phone": "+91 94431 52633",
+    "address": "42/A Beach Road, Tharuvaikulam, Thoothukudi 628105",
+    "district": "Thoothukudi",
+    "reraNumber": "TNRERA/PROM/TUTY/2024/042",
+    "status": "approved",
+    "subscriptionPlan": "professional",
+    "subscriptionStatus": "active",
+    "subscriptionExpiresAt": "2027-12-31T23:59:59Z",
+    "maxProjects": 10,
+    "maxPlots": 500,
+    "logo": "/images/product.png",
+    "verifiedAt": "2026-01-15T00:00:00Z",
+    "createdAt": "2026-01-15T00:00:00Z"
+  },
+  {
+    "id": "tenant-pearl-city-developers",
+    "name": "Pearl City Developers",
+    "slug": "pearl-city-developers",
+    "companyName": "Pearl City Township Developers LLP",
+    "email": "contact@pearlcitydev.com",
+    "phone": "+91 98422 11980",
+    "address": "15 Palayamkottai Road, Thoothukudi 628002",
+    "district": "Thoothukudi",
+    "reraNumber": "TNRERA/PROM/TUTY/2024/055",
+    "status": "approved",
+    "subscriptionPlan": "starter",
+    "subscriptionStatus": "active",
+    "subscriptionExpiresAt": "2027-06-30T23:59:59Z",
+    "maxProjects": 2,
+    "maxPlots": 50,
+    "logo": "/images/real_estate.png",
+    "verifiedAt": "2026-02-10T00:00:00Z",
+    "createdAt": "2026-02-10T00:00:00Z"
+  }
+]

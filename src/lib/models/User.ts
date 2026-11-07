@@ -1,10 +1,14 @@
 import mongoose, { Schema, Document, Model } from 'mongoose';
+import { UserRole } from '@/lib/types';
 
 export interface IUser extends Document {
   name: string;
   email: string;
   phone?: string;
-  role: 'buyer' | 'seller' | 'admin';
+  role: UserRole;
+  tenantId?: string;
+  assignedProjects?: string[];
+  status: 'active' | 'pending' | 'suspended';
   isVerified: boolean;
   savedPlots: string[];
   createdAt: Date;
@@ -17,7 +21,7 @@ const UserSchema = new Schema<IUser>(
       type: String,
       required: [true, 'Name is required'],
       trim: true,
-      default: 'Buyer'
+      default: 'User'
     },
     email: {
       type: String,
@@ -34,8 +38,32 @@ const UserSchema = new Schema<IUser>(
     },
     role: {
       type: String,
-      enum: ['buyer', 'seller', 'admin'],
-      default: 'buyer'
+      enum: [
+        'super_admin',
+        'developer',
+        'project_manager',
+        'sales_executive',
+        'customer',
+        // Backward compatibility
+        'admin',
+        'seller',
+        'buyer'
+      ],
+      default: 'customer'
+    },
+    tenantId: {
+      type: String,
+      index: true,
+      default: null
+    },
+    assignedProjects: {
+      type: [String],
+      default: []
+    },
+    status: {
+      type: String,
+      enum: ['active', 'pending', 'suspended'],
+      default: 'active'
     },
     isVerified: {
       type: Boolean,
