@@ -172,10 +172,10 @@ export default function Footer() {
               TELEPHONE &amp; WHATSAPP
             </h6>
             <a
-              href="tel:+919842155678"
+              href="tel:+917845985551"
               className="text-white hover:text-[#B7E436] transition-colors font-medium block"
             >
-              +91 98421 55678
+              +91 78459 85551
             </a>
             <span className="text-[11px] text-[#A9BA99]">Mon - Sat: 9:00 AM - 7:00 PM</span>
           </div>
@@ -185,10 +185,10 @@ export default function Footer() {
               EMAIL INQUIRIES
             </h6>
             <a
-              href="mailto:contact@plot4tuty.com"
+              href="mailto:plot4in@gmail.com"
               className="text-white hover:text-[#B7E436] transition-colors font-medium block"
             >
-              contact@plot4tuty.com
+              plot4in@gmail.com
             </a>
             <span className="text-[11px] text-[#A9BA99]">Quick response within 2 hours</span>
           </div>

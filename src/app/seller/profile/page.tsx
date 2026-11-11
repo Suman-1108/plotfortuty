@@ -18,8 +18,8 @@ export default function SellerProfilePage() {
   const [profile, setProfile] = useState({
     businessName: 'Sri Balaji Promoters & Land Developers',
     contactPerson: 'S. Ramanathan',
-    phone: '+91 98421 55678',
-    whatsapp: '+91 98421 55678',
+    phone: '+91 78459 85551',
+    whatsapp: '+91 78459 85551',
     email: 'contact@sribalajipromoters.com',
     officeAddress: 'No. 42, Palayamkottai Road, Opp. Collectorate, Thoothukudi, Tamil Nadu - 628008',
     reraRegNumber: 'TNRERA/AGT/THY/0182/2023',

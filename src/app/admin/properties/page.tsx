@@ -178,8 +178,8 @@ export default function AdminPropertiesPage() {
       images: ['/images/ap-rajan-garden-layout.jpg'],
       amenities: ['DTCP Approved Layout', '40ft Tar Road', 'Sweet Groundwater', 'Clear Individual Patta'],
       sellerName: 'Plot 4 Tuty Direct Verified',
-      sellerPhone: '+91 98421 55678',
-      sellerEmail: 'contact@plot4tuty.com',
+      sellerPhone: '+91 78459 85551',
+      sellerEmail: 'plot4in@gmail.com',
       reraNumber: 'TNRERA/AGT/THY/0182/2023'
     });
     setModalError('');
@@ -596,7 +596,7 @@ export default function AdminPropertiesPage() {
                         {plot.sellerName || 'Direct Verification'}
                       </div>
                       <div className="text-[10px] text-gray-500 truncate max-w-[140px]">
-                        {plot.sellerPhone || '+91 98421 55678'}
+                        {plot.sellerPhone || '+91 78459 85551'}
                       </div>
                     </td>
 
@@ -1050,7 +1050,7 @@ export default function AdminPropertiesPage() {
                     type="text"
                     value={editingPlot.sellerPhone || ''}
                     onChange={(e) => setEditingPlot({ ...editingPlot, sellerPhone: e.target.value })}
-                    placeholder="+91 98421 55678"
+                    placeholder="+91 78459 85551"
                     className="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs focus:bg-white focus:border-[#668F35]"
                   />
                 </div>

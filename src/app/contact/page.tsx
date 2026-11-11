@@ -93,8 +93,8 @@ export default function ContactPage() {
                   <Phone className="w-4 h-4 text-[#668F35] shrink-0" />
                   <div>
                     <span className="block text-[#666A5D]">Direct Telephone</span>
-                    <a href="tel:+919842155678" className="text-sm font-bold text-[#222222] hover:text-[#668F35]">
-                      +91 98421 55678
+                    <a href="tel:+917845985551" className="text-sm font-bold text-[#222222] hover:text-[#668F35]">
+                      +91 78459 85551
                     </a>
                   </div>
                 </div>
@@ -104,12 +104,12 @@ export default function ContactPage() {
                   <div>
                     <span className="block text-[#666A5D]">WhatsApp Support (24/7)</span>
                     <a
-                      href="https://wa.me/919842155678"
+                      href="https://wa.me/917845985551"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-[#668F35] hover:underline"
                     >
-                      +91 98421 55678 (Click to Chat)
+                      +91 78459 85551 (Click to Chat)
                     </a>
                   </div>
                 </div>
@@ -118,8 +118,8 @@ export default function ContactPage() {
                   <Mail className="w-4 h-4 text-[#668F35] shrink-0" />
                   <div>
                     <span className="block text-[#666A5D]">Official Email</span>
-                    <a href="mailto:enquiry@plot4tuty.com" className="text-sm font-medium text-[#222222]">
-                      enquiry@plot4tuty.com
+                    <a href="mailto:plot4in@gmail.com" className="text-sm font-medium text-[#222222]">
+                      plot4in@gmail.com
                     </a>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ export default function ContactPage() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+91 98421 XXXXX"
+                      placeholder="+91 78459 XXXXX"
                       className="w-full px-3 py-2 text-xs sm:text-sm bg-[#F4F5F0] border border-[#DADDD5] rounded focus:outline-none focus:border-[#668F35]"
                     />
                   </div>

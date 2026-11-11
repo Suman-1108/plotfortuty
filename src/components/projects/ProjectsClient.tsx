@@ -148,7 +148,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                 </div>
 
                 <a
-                  href={`https://wa.me/919842155678?text=${encodeURIComponent(
+                  href={`https://wa.me/917845985551?text=${encodeURIComponent(
                     `Hello Plot 4 Tuty, I would like to download the layout map and price schedule for ${activeProject.name}.`
                   )}`}
                   target="_blank"
@@ -219,7 +219,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                     </div>
 
                     <a
-                      href={`https://wa.me/919842155678?text=${encodeURIComponent(
+                      href={`https://wa.me/917845985551?text=${encodeURIComponent(
                         `Hello Plot 4 Tuty, I am interested in ${activeProject.name} (Plot + House Construction Package & 90% Loan Guidance). Please share details.`
                       )}`}
                       target="_blank"
@@ -335,7 +335,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
                     </div>
 
                     <a
-                      href={`https://wa.me/919842155678?text=${encodeURIComponent(
+                      href={`https://wa.me/917845985551?text=${encodeURIComponent(
                         `Hello Plot 4 Tuty, I want to book an on-site visit for ${activeProject.name} Plot #${selectedPlot.number} (${selectedPlot.cents} Cents, ${selectedPlot.facing} facing).`
                       )}`}
                       target="_blank"

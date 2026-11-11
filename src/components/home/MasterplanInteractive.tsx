@@ -396,7 +396,7 @@ export default function MasterplanInteractive() {
                 {selectedPlot.status === 'Available' ? (
                   <>
                     <a
-                      href={`https://wa.me/919842155678?text=Hello%20Plot%20For%20Tuty,%20I%20am%20interested%20in%20AP%20Rajan%20Garden%20Plot%20%23${selectedPlot.number}%20in%20Tharuvaikulam%20(${selectedPlot.cents}%20Cents,%20${selectedPlot.price}).`}
+                      href={`https://wa.me/917845985551?text=Hello%20Plot%20For%20Tuty,%20I%20am%20interested%20in%20AP%20Rajan%20Garden%20Plot%20%23${selectedPlot.number}%20in%20Tharuvaikulam%20(${selectedPlot.cents}%20Cents,%20${selectedPlot.price}).`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full py-3 rounded-2xl bg-[#B7E436] hover:bg-[#A6D42A] text-[#1C2618] text-xs font-black transition-all flex items-center justify-center space-x-2 shadow-xs cursor-pointer"

@@ -21,7 +21,7 @@ export default function SellerLoginPage() {
   const [isRegister, setIsRegister] = useState(false);
   const [businessName, setBusinessName] = useState('Sri Balaji Promoters');
   const [contactName, setContactName] = useState('S. Ramanathan');
-  const [phone, setPhone] = useState('+91 98421 55678');
+  const [phone, setPhone] = useState('+91 78459 85551');
   const [email, setEmail] = useState('contact@sribalajipromoters.com');
   const [reraNumber, setReraNumber] = useState('TNRERA/AGT/THY/0182/2023');
   const [loading, setLoading] = useState(false);
@@ -132,7 +132,7 @@ export default function SellerLoginPage() {
               <input
                 type="tel"
                 required
-                placeholder="+91 98421 55678"
+                placeholder="+91 78459 85551"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full bg-transparent text-xs sm:text-sm font-medium focus:outline-none"

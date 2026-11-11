@@ -243,7 +243,7 @@ export default function CompareClient({ initialPlots }: CompareClientProps) {
                     View Full Details
                   </Link>
                   <a
-                    href={`https://wa.me/919842155678?text=Hello%20Plot%20For%20Thoothukudi,%20I%20am%20comparing%20plot:%20${encodeURIComponent(
+                    href={`https://wa.me/917845985551?text=Hello%20Plot%20For%20Thoothukudi,%20I%20am%20comparing%20plot:%20${encodeURIComponent(
                       p.title
                     )}`}
                     target="_blank"

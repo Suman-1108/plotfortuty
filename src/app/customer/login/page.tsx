@@ -182,7 +182,7 @@ export default function CustomerLoginPage() {
                 <Phone className="w-4 h-4 text-gray-400 mr-2 shrink-0" />
                 <input
                   type="tel"
-                  placeholder="+91 98421 XXXXX"
+                  placeholder="+91 78459 XXXXX"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   className="w-full bg-transparent text-xs sm:text-sm font-medium focus:outline-none"

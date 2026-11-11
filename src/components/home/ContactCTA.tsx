@@ -74,7 +74,7 @@ export default function ContactCTA() {
 
             <div className="pt-2 space-y-3">
               <a
-                href="https://wa.me/919842155678?text=Hello%20Plot%204%20Tuty,%20I%20would%20like%20to%20schedule%20a%20site%20visit%20for%20residential%20plots."
+                href="https://wa.me/917845985551?text=Hello%20Plot%204%20Tuty,%20I%20would%20like%20to%20schedule%20a%20site%20visit%20for%20residential%20plots."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 p-3.5 bg-[#EDF3E4] border border-[#668F35]/30 rounded-xl hover:bg-[#668F35] hover:text-white transition-colors group"
@@ -87,13 +87,13 @@ export default function ContactCTA() {
                     Instant WhatsApp Enquiry
                   </span>
                   <span className="text-sm font-bold text-[#222222] group-hover:text-white">
-                    +91 98421 55678
+                    +91 78459 85551
                   </span>
                 </div>
               </a>
 
               <a
-                href="tel:+919842155678"
+                href="tel:+917845985551"
                 className="flex items-center space-x-3 p-3.5 bg-[#F4F5F0] border border-[#DADDD5] rounded-xl hover:bg-white transition-colors"
               >
                 <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-[#222222] shrink-0 border border-[#DADDD5]">
@@ -104,7 +104,7 @@ export default function ContactCTA() {
                     Direct Office Telephone
                   </span>
                   <span className="text-sm font-bold text-[#222222]">
-                    +91 98421 55678
+                    +91 78459 85551
                   </span>
                 </div>
               </a>
@@ -171,7 +171,7 @@ export default function ContactCTA() {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="e.g. +91 98421 XXXXX"
+                      placeholder="e.g. +91 78459 XXXXX"
                       className="w-full px-3 py-2 text-xs sm:text-sm bg-white border border-[#DADDD5] rounded-md focus:outline-none focus:border-[#668F35]"
                     />
                   </div>

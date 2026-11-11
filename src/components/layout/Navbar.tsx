@@ -86,11 +86,11 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-6">
             <a
-              href="tel:+919842155678"
+              href="tel:+917845985551"
               className="flex items-center space-x-1.5 text-gray-300 hover:text-white transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#B7E436]" />
-              <span>Direct Assistance: +91 98421 55678</span>
+              <span>Direct Assistance: +91 78459 85551</span>
             </a>
             <span className="text-gray-500">|</span>
 
@@ -173,7 +173,7 @@ export default function Navbar() {
           {/* Right Action CTA Buttons */}
           <div className="hidden sm:flex items-center space-x-3">
             <a
-              href="https://wa.me/919842155678?text=Hello%20Plot%204%20Tuty,%20I%20am%20interested%20in%20residential%20plots."
+              href="https://wa.me/917845985551?text=Hello%20Plot%204%20Tuty,%20I%20am%20interested%20in%20residential%20plots."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-1.5 px-3.5 py-2 text-xs font-semibold text-[#1F271B] bg-white border border-[#DADDD5] hover:border-[#668F35] rounded-full transition-all shadow-xs"
@@ -194,7 +194,7 @@ export default function Navbar() {
           {/* Mobile menu toggle */}
           <div className="lg:hidden flex items-center space-x-2">
             <a
-              href="https://wa.me/919842155678"
+              href="https://wa.me/917845985551"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-[#668F35] bg-white border border-[#DADDD5] rounded-full"

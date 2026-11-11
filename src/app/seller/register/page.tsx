@@ -252,7 +252,7 @@ export default function SellerRegisterPage() {
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="e.g. +91 98421 55678"
+                  placeholder="e.g. +91 78459 85551"
                   className="w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs focus:bg-white focus:border-[#668F35]"
                 />
               </div>

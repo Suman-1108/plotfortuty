@@ -46,14 +46,14 @@ export default function PlotDetailClient({ plot, similarPlots }: PlotDetailClien
 
   const staticUrl = `https://plot4tuty.com/plots/${plot.slug}`;
   const [whatsappUrl, setWhatsappUrl] = useState(
-    `https://wa.me/919842155678?text=${encodeURIComponent(
+    `https://wa.me/917845985551?text=${encodeURIComponent(
       `Hello Plot 4 Tuty, I am interested in ${plot.title} (${plot.layoutPlotNumber}) at ${plot.location}. Price: ${plot.priceDisplay}. Link: ${staticUrl}`
     )}`
   );
 
   useEffect(() => {
     setWhatsappUrl(
-      `https://wa.me/919842155678?text=${encodeURIComponent(
+      `https://wa.me/917845985551?text=${encodeURIComponent(
         `Hello Plot 4 Tuty, I am interested in ${plot.title} (${plot.layoutPlotNumber}) at ${plot.location}. Price: ${plot.priceDisplay}. Link: ${window.location.href}`
       )}`
     );
@@ -331,11 +331,11 @@ export default function PlotDetailClient({ plot, similarPlots }: PlotDetailClien
                 </a>
 
                 <a
-                  href="tel:+919842155678"
+                  href="tel:+917845985551"
                   className="w-full flex items-center justify-center space-x-2 py-3 px-4 bg-white border border-[#DADDD5] hover:border-[#668F35] text-[#222222] rounded-lg text-xs font-semibold transition-colors"
                 >
                   <Phone className="w-4 h-4 text-[#668F35]" />
-                  <span>Call: +91 98421 55678</span>
+                  <span>Call: +91 78459 85551</span>
                 </a>
               </div>
 

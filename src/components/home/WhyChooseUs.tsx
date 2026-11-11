@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
             {/* Quick Contact Icons */}
             <div className="flex items-center space-x-3 pt-1">
               <a
-                href="https://wa.me/919842155678"
+                href="https://wa.me/917845985551"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white border border-[#DADDD5] flex items-center justify-center text-[#668F35] hover:bg-[#668F35] hover:text-white transition-colors"
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
                 <MessageSquare className="w-4 h-4" />
               </a>
               <a
-                href="tel:+919842155678"
+                href="tel:+917845985551"
                 className="w-9 h-9 rounded-full bg-white border border-[#DADDD5] flex items-center justify-center text-[#222222] hover:bg-[#668F35] hover:text-white transition-colors"
                 title="Direct Phone"
               >

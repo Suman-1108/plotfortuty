@@ -16,7 +16,7 @@ const SAMPLE_USERS = [
   {
     id: 'usr-1',
     name: 'S. Ramanathan',
-    phone: '+91 98421 55678',
+    phone: '+91 78459 85551',
     email: 'ramanathan.s@gmail.com',
     role: 'Verified Buyer',
     savedPlots: 2,

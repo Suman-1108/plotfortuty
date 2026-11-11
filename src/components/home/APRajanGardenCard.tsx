@@ -83,7 +83,7 @@ export default function APRajanGardenCard() {
             {/* Quick Action Badges */}
             <div className="flex items-center gap-2">
               <a
-                href="https://wa.me/919842155678?text=Hello%20AP%20Rajan%20Garden,%20I%20am%20interested%20in%20beachside%20plots%20and%20house%20construction%20packages%20in%20Tharuvaikulam."
+                href="https://wa.me/917845985551?text=Hello%20AP%20Rajan%20Garden,%20I%20am%20interested%20in%20beachside%20plots%20and%20house%20construction%20packages%20in%20Tharuvaikulam."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold transition-all shadow-md"
@@ -92,7 +92,7 @@ export default function APRajanGardenCard() {
                 <span>WhatsApp Enquiry</span>
               </a>
               <a
-                href="tel:+919842155678"
+                href="tel:+917845985551"
                 className="inline-flex items-center space-x-1.5 px-4 py-2.5 rounded-xl bg-[#B7E436] hover:bg-[#A6D42A] text-[#142016] text-xs font-black transition-all shadow-md"
               >
                 <PhoneCall className="w-4 h-4" />
@@ -326,7 +326,7 @@ export default function APRajanGardenCard() {
 
               <div className="flex flex-wrap items-center gap-3 shrink-0">
                 <a
-                  href="https://wa.me/919842155678?text=Hello%20AP%20Rajan%20Garden,%20I%20want%20to%20book%20a%20site%20visit%20for%20Tharuvaikulam%20plots."
+                  href="https://wa.me/917845985551?text=Hello%20AP%20Rajan%20Garden,%20I%20want%20to%20book%20a%20site%20visit%20for%20Tharuvaikulam%20plots."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-3 rounded-xl bg-[#B7E436] hover:bg-[#A6D42A] text-[#142016] font-black text-xs transition-all shadow-md flex items-center space-x-1.5"
@@ -336,11 +336,11 @@ export default function APRajanGardenCard() {
                 </a>
 
                 <a
-                  href="tel:+919842155678"
+                  href="tel:+917845985551"
                   className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs transition-all flex items-center space-x-1.5"
                 >
                   <PhoneCall className="w-4 h-4 text-[#B7E436]" />
-                  <span>+91 98421 55678</span>
+                  <span>+91 78459 85551</span>
                 </a>
               </div>
             </div>
